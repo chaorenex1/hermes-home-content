@@ -1,0 +1,109 @@
+--- a/adviser_mode.py
++++ b/adviser_mode.py
+@@ -28,6 +28,8 @@
+ import time
+ from collections import deque
+ from typing import Any, Optional
++
++from agent.memory_provider import spawn_context_thread
+ 
+ from .prompting import ADVICE_TARGETS, advice_target_section, data_block
+ 
+@@ -456,8 +458,7 @@
+             if self._thread is not None and self._thread.is_alive():
+                 return
+             self._stop.clear()
+-            self._thread = threading.Thread(target=self._run, daemon=True,
+-                                            name="minir-adviser-mode")
++            self._thread = spawn_context_thread(self._run, name="minir-adviser-mode")
+             self._thread.start()
+ 
+     def _enqueue(self, session: str) -> None:
+@@ -840,12 +841,19 @@
+             self._ended.add(session_id)
+         self.session_reset(session_id)
+ 
+-    def stop(self) -> None:
++    def stop(self) -> bool:
++        """Stop the reviewer; True once it is no longer running.
++
++        A review that is inside an LLM call can outlive the bounded join, so the
++        caller must not close the store while this returns False.
++        """
+         self._stop.set()
+         self._queue.put(None)
+         thread, self._thread = self._thread, None
++        stopped = True
+         if thread is not None and thread.is_alive():
+             thread.join(timeout=2.0)
++            stopped = not thread.is_alive()
+         with self._lock:
+             self._rings.clear()
+             self._queued.clear()
+@@ -853,3 +861,4 @@
+             self._dirty.clear()
+             self._ended.clear()
+             self._staged.clear()
++        return stopped
+--- a/worker.py
++++ b/worker.py
+@@ -1235,12 +1235,18 @@
+             self._thread = spawn(self.run_once, name="minir-layer-worker")
+         self._thread.start()
+ 
+-    def stop(self, timeout: float = 5.0) -> None:
+-        """Wait for the current drain so the store is not closed underneath it."""
++    def stop(self, timeout: float = 5.0) -> bool:
++        """Wait for the current drain so the store is not closed underneath it.
++
++        Returns True once no drain is in flight; False when the join timed out
++        (an LLM-backed job can outlive the caller's patience).
++        """
+         with self._lock:
+             thread = self._thread
+         if thread is not None and thread.is_alive():
+             thread.join(timeout=timeout)
++            return not thread.is_alive()
++        return True
+ 
+     def expire_orphans(self, *, before: float) -> int:
+         """Close jobs a previous process left open — their window's content is gone with it."""
+--- a/__init__.py
++++ b/__init__.py
+@@ -727,11 +727,14 @@
+             except Exception as exc:
+                 logger.debug("Minir shutdown flush failed: %s", exc)
+         worker, self._worker = self._worker, None
++        drained = True
+         if worker is not None:
+             worker.kick(spawn=spawn_context_thread)
+-            worker.stop()  # bounded join: the store cannot close under a draining job
++            # A drain still inside an LLM call must keep its store: closing the
++            # connection underneath it loses the job and its failure record.
++            drained = worker.stop()
+         self._adviser_mode.session_end(self._session_id)
+-        self._adviser_mode.stop()  # no review may touch the store after this point
++        drained = self._adviser_mode.stop() and drained  # no review may touch the store after this point
+         self.flush_metrics()
+         # Only now that no drain is in flight: a queued boundary job must still find its window.
+         self._transcript.clear()
+@@ -739,10 +742,15 @@
+             self._prefetch_thread.join(timeout=10.0)
+         store, self._store = self._store, None
+         if store is not None:
+-            try:
+-                store.close()
+-            except Exception as exc:
+-                logger.debug("Minir store close failed: %s", exc)
++            if not drained:
++                logger.warning(
++                    "Minir store left open: a background job was still running at shutdown; "
++                    "its row stays open and the next process reclaims it")
++            else:
++                try:
++                    store.close()
++                except Exception as exc:
++                    logger.debug("Minir store close failed: %s", exc)
+         global _ACTIVE_PROVIDER
+         if _ACTIVE_PROVIDER is self:
+             _ACTIVE_PROVIDER = None

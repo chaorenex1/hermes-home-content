@@ -1,0 +1,1 @@
+import{t as e}from"./gateway-settings-BxqnB0PR.js";export{e as GatewaySettings};

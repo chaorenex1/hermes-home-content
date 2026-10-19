@@ -1,0 +1,43 @@
+{
+  "camofox-human-auth": {
+    "pinned": false,
+    "revision": "19946d2e664063ffc5259f85703d14e11b477512",
+    "source": "https://github.com/tim-toothed/hermes-camofox-human-auth.git"
+  },
+  "hermes-workbench": {
+    "catalog": {
+      "name": "hermes-workbench",
+      "pin": "f07fb5c90e24c1a396604758feb0fd4ae077760b",
+      "repo": "https://github.com/sxuff/hermes-workbench",
+      "sha": "f07fb5c90e24c1a396604758feb0fd4ae077760b",
+      "tier": "community"
+    },
+    "pinned": true,
+    "revision": "f07fb5c90e24c1a396604758feb0fd4ae077760b",
+    "source": "https://github.com/sxuff/hermes-workbench"
+  },
+  "homeassistant": {
+    "catalog": {
+      "name": "homeassistant",
+      "pin": "ba30cb0cf86c52bdb5cde98974bc062e97966529",
+      "repo": "https://github.com/NousResearch/hermes-homeassistant",
+      "sha": "ba30cb0cf86c52bdb5cde98974bc062e97966529",
+      "tier": "official"
+    },
+    "pinned": true,
+    "revision": "ba30cb0cf86c52bdb5cde98974bc062e97966529",
+    "source": "https://github.com/NousResearch/hermes-homeassistant"
+  },
+  "quota": {
+    "catalog": {
+      "name": "quota",
+      "pin": "ce8593a25ff61c32dd1e929fe2f87502cb6408cc",
+      "repo": "https://github.com/rarf/hermes-quota-plugin",
+      "sha": "ce8593a25ff61c32dd1e929fe2f87502cb6408cc",
+      "tier": "community"
+    },
+    "pinned": true,
+    "revision": "ce8593a25ff61c32dd1e929fe2f87502cb6408cc",
+    "source": "https://github.com/rarf/hermes-quota-plugin"
+  }
+}

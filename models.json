@@ -1,0 +1,74 @@
+[
+  {
+    "id": "d5396e71-67a4-44a4-83a3-fee7afc57abc",
+    "name": "Claude Sonnet 4",
+    "provider": "openrouter",
+    "model": "anthropic/claude-sonnet-4-20250514",
+    "baseUrl": "",
+    "createdAt": 1782697473876
+  },
+  {
+    "id": "ce948631-3022-49c3-808b-80ae69b7768e",
+    "name": "Claude Sonnet 4",
+    "provider": "anthropic",
+    "model": "claude-sonnet-4-20250514",
+    "baseUrl": "",
+    "createdAt": 1782697473876
+  },
+  {
+    "id": "2f0bd45f-e422-4fe5-ae26-4da3ad5236f7",
+    "name": "GPT-4.1",
+    "provider": "openai",
+    "model": "gpt-4.1",
+    "baseUrl": "",
+    "createdAt": 1782697473876
+  },
+  {
+    "id": "7731d8a1-41ec-4be2-b04b-e93b7a45ca84",
+    "name": "glm-5.1",
+    "provider": "ollama-cloud",
+    "model": "glm-5.1",
+    "baseUrl": "https://ollama.com/v1",
+    "createdAt": 1782697473876
+  },
+  {
+    "id": "0805b979-be68-4755-ab03-d28bc42e15dd",
+    "name": "DeepSeek V4 Pro (Atlas Cloud)",
+    "provider": "atlascloud",
+    "model": "deepseek-ai/deepseek-v4-pro",
+    "baseUrl": "",
+    "createdAt": 1782697473876
+  },
+  {
+    "id": "108873c6-0838-4d9a-807f-4535fb8764b8",
+    "name": "DeepSeek V4 Flash (Atlas Cloud)",
+    "provider": "atlascloud",
+    "model": "deepseek-ai/deepseek-v4-flash",
+    "baseUrl": "",
+    "createdAt": 1782697473876
+  },
+  {
+    "id": "1f4a833e-b8c5-4d0f-9da8-42db0bd8280d",
+    "name": "Qwen3-235B Instruct (Atlas Cloud)",
+    "provider": "atlascloud",
+    "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+    "baseUrl": "",
+    "createdAt": 1782697473876
+  },
+  {
+    "id": "1036f79d-7851-47d1-8ba4-ee0a57be7c05",
+    "name": "kimi-k2.7-code",
+    "provider": "kimi-coding",
+    "model": "kimi-k2.7-code",
+    "baseUrl": "",
+    "createdAt": 1782698232866
+  },
+  {
+    "id": "a3f70d00-adbf-42ac-aff1-aa5e96d3927b",
+    "name": "kimi-k2.7-code",
+    "provider": "kimi-for-coding",
+    "model": "kimi-k2.7-code",
+    "baseUrl": "https://api.kimi.com/coding",
+    "createdAt": 1782698425043
+  }
+]

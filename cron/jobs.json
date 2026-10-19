@@ -1,0 +1,87 @@
+{
+  "jobs": [
+    {
+      "id": "3417c52af8cc",
+      "name": "default profile skills and plugins sync",
+      "prompt": "Run the deterministic no-backup incremental mirror: use the default profile's complete skills/ and plugins/ directories as authoritative, copy only changed nodes, delete target-only nodes, create no backups, and do not copy config, credentials, memory, sessions, or cron state.",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "provider_snapshot": null,
+      "model_snapshot": null,
+      "base_url": null,
+      "script": "sync_default_profile_extensions.py",
+      "no_agent": true,
+      "context_from": null,
+      "schedule": {
+        "kind": "interval",
+        "minutes": 5,
+        "display": "every 5m"
+      },
+      "schedule_display": "every 5m",
+      "repeat": {
+        "times": null,
+        "completed": 14034
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-07-22T22:03:09.336966+08:00",
+      "next_run_at": "2026-10-20T00:07:59.388527+08:00",
+      "deliver": "local",
+      "origin": null,
+      "enabled_toolsets": null,
+      "workdir": null,
+      "fire_claim": null,
+      "failure_streak": 0
+    },
+    {
+      "id": "82ff8a397b0a",
+      "name": "camofox cookie sync (local browser → Camofox)",
+      "prompt": "Deterministic no-agent job: run scripts/camofox_cookie_sync.py, which detects the local browser (Chromium family / Firefox), exports the most recently used profile's cookies and imports them into the Camofox profile camofox-search browses with. Script stdout is the deliverable.",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": "camofox_cookie_sync.py",
+      "no_agent": true,
+      "monitor_script": null,
+      "monitor_url": null,
+      "monitor_state": null,
+      "context_from": null,
+      "schedule": {
+        "kind": "interval",
+        "minutes": 4320,
+        "display": "every 4320m"
+      },
+      "schedule_display": "every 4320m",
+      "repeat": {
+        "times": null,
+        "completed": 2
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-10-16T15:56:22.733220+08:00",
+      "next_run_at": "2026-10-22T15:56:56.688469+08:00",
+      "failure_streak": 2,
+      "deliver": "local",
+      "origin": {
+        "platform": "local",
+        "chat_id": "local-d451607934a3af87ae803766f6a0e7c90a20bd83b491f1dd4442bba162d63663",
+        "chat_name": null,
+        "thread_id": null,
+        "user_id": "sid:S-1-5-21-3534996607-354426051-91059015-1001",
+        "scope_id": null
+      },
+      "enabled_toolsets": null,
+      "workdir": null,
+      "fire_claim": null
+    }
+  ],
+  "updated_at": "2026-10-20T00:02:59.389460+08:00"
+}

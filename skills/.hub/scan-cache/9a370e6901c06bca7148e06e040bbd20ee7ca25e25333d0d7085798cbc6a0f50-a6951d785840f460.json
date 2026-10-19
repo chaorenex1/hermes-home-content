@@ -1,0 +1,13 @@
+{
+  "bundle_hash": "sha256:9a370e6901c06bca7148e06e040bbd20ee7ca25e25333d0d7085798cbc6a0f50",
+  "scanner_version": "skills-guard-v10",
+  "source": "https://raw.githubusercontent.com/kangw24/BoldGPT/main/SKILL.md",
+  "source_url": "https://raw.githubusercontent.com/kangw24/BoldGPT/main/SKILL.md",
+  "verdict": "safe",
+  "trust_level": "community",
+  "findings": [],
+  "rules": [],
+  "scanned_at": "2026-10-18T14:46:47.586364+00:00",
+  "summary": "anti-overengineering: clean scan, no threats detected",
+  "fresh": true
+}

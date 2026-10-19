@@ -1,0 +1,8 @@
+name: camofox-human-auth
+version: 0.2.0
+description: "Universal human-controlled authentication for Camofox Browser, powered by the Camoufox engine. Supports login, registration, SSO, MFA, OTP, CAPTCHA, and device confirmation. Requires the Camofox backend; never changes an existing Hermes browser provider automatically."
+author: Timur / Hermes community
+provides_tools:
+  - camofox_backend_status
+  - camofox_auth_open
+  - camofox_auth_finish

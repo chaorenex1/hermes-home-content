@@ -1,0 +1,36 @@
+Metadata-Version: 2.4
+Name: mo2-assets-engine
+Version: 0.1.0.dev0
+Summary: Offline analyzer for MO2 profile state, loose files, and BA2/BSA archives. Computes loose-vs-archive conflict winners.
+Author: BB-84C
+License-Expression: MIT
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: typer>=0.15
+Requires-Dist: pydantic>=2.10
+Provides-Extra: dev
+Requires-Dist: pytest>=8; extra == "dev"
+Requires-Dist: mypy>=1.13; extra == "dev"
+Requires-Dist: ruff>=0.8; extra == "dev"
+
+# mo2-assets-engine
+
+Offline analyzer for MO2 profile state, loose files, and BA2/BSA archives.
+Reads modlist.txt + plugins.txt + mod directories directly from disk;
+does not require MO2 to be running.
+
+Computes the same 6-bucket loose-vs-archive conflict resolution as MO2's
+internal `ModInfoWithConflictInfo::doConflictCheck()`:
+
+- loose-vs-loose (decided by modlist priority)
+- loose-vs-archive (loose always wins)
+- archive-vs-archive (decided by archive load order)
+
+Used by:
+- `mo2-assets` CLI (this package)
+- `mo2_assets_inspector` MO2 IPluginTool plugin (Plan B; planned)
+
+## CLI quick start
+
+    pip install -e tools/mo2-assets-engine/[dev]
+    mo2-assets summary --profile <MO2_Root>/profiles/Default --game-data "<game>/Data"

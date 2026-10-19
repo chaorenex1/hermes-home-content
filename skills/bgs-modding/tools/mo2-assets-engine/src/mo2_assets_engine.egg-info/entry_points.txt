@@ -1,0 +1,2 @@
+[console_scripts]
+mo2-assets = mo2_assets_engine.cli.app:main

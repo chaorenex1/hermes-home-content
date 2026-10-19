@@ -1,0 +1,31 @@
+name: minir
+version: 0.8.0
+description: "Minir — local-first memory plugin: base/dialectic layer artifacts in SQLite, FTS5 recall over every conclusion, six-section user/AI cards with value markers, a dependent dialectic review that corrects the base artifact (snapshot + FTS) and emits severity-ranked advices, an optional main adviser that reviews live tool events, grades dialectic advices as candidates, and delivers only promoted advice through llm_request middleware; adviser_consult uses the same adviser core, with dynamic severity/target/handling/nit/language guidance in the system block, plus identity files and a context engine that synchronously refreshes both layers at the 95%-of-threshold boundary and replaces the unprotected window with an audited assistant session_summary. Stores no transcripts (derived text may quote evidence). Stdlib only; fork it."
+author: chaorenex1
+license: MIT
+tags:
+  - memory
+  - template
+# The provider's own surface (MemoryProvider) is reached through memory.provider;
+# these are the plugin-level hooks register(ctx) subscribes to. The host validator fails
+# the manifest when register() adds a hook that is not declared here.
+provides_hooks:
+  - on_session_start
+  - on_session_reset
+  - on_session_finalize
+  - pre_llm_call
+  - post_llm_call
+  - post_tool_call
+  - pre_tool_call
+  - pre_verify
+  - on_interim_message
+  - post_api_request
+  - api_request_error
+provides_middleware:
+  - llm_request
+# Registering a tool through the plugin context (not through the MemoryProvider's
+# get_tool_schemas) requires declaring it here, or `hermes plugins validate` fails the
+# manifest with "undeclared tools registered".
+provides_tools:
+  - adviser_consult
+  - adviser_session_search

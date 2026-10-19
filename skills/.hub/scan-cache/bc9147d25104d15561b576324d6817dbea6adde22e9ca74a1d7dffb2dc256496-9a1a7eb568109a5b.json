@@ -1,0 +1,353 @@
+{
+  "bundle_hash": "sha256:bc9147d25104d15561b576324d6817dbea6adde22e9ca74a1d7dffb2dc256496",
+  "scanner_version": "skills-guard-v10",
+  "source": "official",
+  "source_url": "https://github.com/tt-a1i/archify/tree/b25142deac4b19b293e45b6bf6d69351d3c8f3b6/archify",
+  "verdict": "caution",
+  "trust_level": "builtin",
+  "findings": [
+    {
+      "pattern_id": "oversized_file",
+      "severity": "medium",
+      "category": "structural",
+      "file": "assets\\template.html",
+      "line": 0,
+      "match": "766KB",
+      "description": "file is 766KB (limit: 256KB)"
+    },
+    {
+      "pattern_id": "oversized_file",
+      "severity": "medium",
+      "category": "structural",
+      "file": "bin\\archify.mjs",
+      "line": 0,
+      "match": "269KB",
+      "description": "file is 269KB (limit: 256KB)"
+    },
+    {
+      "pattern_id": "oversized_file",
+      "severity": "medium",
+      "category": "structural",
+      "file": "examples\\class-payment-processors-rendered.html",
+      "line": 0,
+      "match": "832KB",
+      "description": "file is 832KB (limit: 256KB)"
+    },
+    {
+      "pattern_id": "oversized_file",
+      "severity": "medium",
+      "category": "structural",
+      "file": "examples\\class-payments-rendered.html",
+      "line": 0,
+      "match": "799KB",
+      "description": "file is 799KB (limit: 256KB)"
+    },
+    {
+      "pattern_id": "oversized_file",
+      "severity": "medium",
+      "category": "structural",
+      "file": "examples\\dataflow-product-analytics.html",
+      "line": 0,
+      "match": "802KB",
+      "description": "file is 802KB (limit: 256KB)"
+    },
+    {
+      "pattern_id": "oversized_file",
+      "severity": "medium",
+      "category": "structural",
+      "file": "examples\\erd-orders-rendered.html",
+      "line": 0,
+      "match": "819KB",
+      "description": "file is 819KB (limit: 256KB)"
+    },
+    {
+      "pattern_id": "oversized_file",
+      "severity": "medium",
+      "category": "structural",
+      "file": "examples\\lifecycle-agent-run.html",
+      "line": 0,
+      "match": "805KB",
+      "description": "file is 805KB (limit: 256KB)"
+    },
+    {
+      "pattern_id": "oversized_file",
+      "severity": "medium",
+      "category": "structural",
+      "file": "examples\\sequence-cache-miss-request.html",
+      "line": 0,
+      "match": "799KB",
+      "description": "file is 799KB (limit: 256KB)"
+    },
+    {
+      "pattern_id": "oversized_file",
+      "severity": "medium",
+      "category": "structural",
+      "file": "examples\\subscription-billing-rendered.html",
+      "line": 0,
+      "match": "841KB",
+      "description": "file is 841KB (limit: 256KB)"
+    },
+    {
+      "pattern_id": "oversized_file",
+      "severity": "medium",
+      "category": "structural",
+      "file": "examples\\timeline-archify-dev-activity-rendered.html",
+      "line": 0,
+      "match": "824KB",
+      "description": "file is 824KB (limit: 256KB)"
+    },
+    {
+      "pattern_id": "oversized_file",
+      "severity": "medium",
+      "category": "structural",
+      "file": "examples\\timeline-payment-incident-rendered.html",
+      "line": 0,
+      "match": "792KB",
+      "description": "file is 792KB (limit: 256KB)"
+    },
+    {
+      "pattern_id": "oversized_file",
+      "severity": "medium",
+      "category": "structural",
+      "file": "examples\\tree-archify-repository-rendered.html",
+      "line": 0,
+      "match": "834KB",
+      "description": "file is 834KB (limit: 256KB)"
+    },
+    {
+      "pattern_id": "oversized_file",
+      "severity": "medium",
+      "category": "structural",
+      "file": "examples\\tree-payment-platform-rendered.html",
+      "line": 0,
+      "match": "798KB",
+      "description": "file is 798KB (limit: 256KB)"
+    },
+    {
+      "pattern_id": "oversized_file",
+      "severity": "medium",
+      "category": "structural",
+      "file": "examples\\waterfall-checkout-request-rendered.html",
+      "line": 0,
+      "match": "791KB",
+      "description": "file is 791KB (limit: 256KB)"
+    },
+    {
+      "pattern_id": "oversized_file",
+      "severity": "medium",
+      "category": "structural",
+      "file": "examples\\waterfall-example-rebuild-rendered.html",
+      "line": 0,
+      "match": "821KB",
+      "description": "file is 821KB (limit: 256KB)"
+    },
+    {
+      "pattern_id": "oversized_file",
+      "severity": "medium",
+      "category": "structural",
+      "file": "examples\\web-app-rendered.html",
+      "line": 0,
+      "match": "804KB",
+      "description": "file is 804KB (limit: 256KB)"
+    },
+    {
+      "pattern_id": "oversized_file",
+      "severity": "medium",
+      "category": "structural",
+      "file": "examples\\workflow-agent-tool-call-rendered.html",
+      "line": 0,
+      "match": "809KB",
+      "description": "file is 809KB (limit: 256KB)"
+    },
+    {
+      "pattern_id": "oversized_file",
+      "severity": "medium",
+      "category": "structural",
+      "file": "renderers\\shared\\generated-validators.mjs",
+      "line": 0,
+      "match": "823KB",
+      "description": "file is 823KB (limit: 256KB)"
+    },
+    {
+      "pattern_id": "too_many_files",
+      "severity": "medium",
+      "category": "structural",
+      "file": "(directory)",
+      "line": 0,
+      "match": "157 files",
+      "description": "skill has 157 files (limit: 50)"
+    },
+    {
+      "pattern_id": "oversized_skill",
+      "severity": "low",
+      "category": "structural",
+      "file": "(directory)",
+      "line": 0,
+      "match": "16650KB total",
+      "description": "skill is 16650KB total (limit: 5120KB)"
+    },
+    {
+      "pattern_id": "encoded_exfil",
+      "severity": "high",
+      "category": "exfiltration",
+      "file": "assets\\template.html",
+      "line": 162,
+      "match": "src: url(data:font/woff2;base64,d09GMgABAAAAAC1MABIAAAAAdAQAACzjAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGoJLG4ouHIM+BmA/U1RBV...",
+      "description": "base64 encoding combined with environment access"
+    },
+    {
+      "pattern_id": "encoded_exfil",
+      "severity": "high",
+      "category": "exfiltration",
+      "file": "examples\\class-payment-processors-rendered.html",
+      "line": 162,
+      "match": "src: url(data:font/woff2;base64,d09GMgABAAAAAC1MABIAAAAAdAQAACzjAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGoJLG4ouHIM+BmA/U1RBV...",
+      "description": "base64 encoding combined with environment access"
+    },
+    {
+      "pattern_id": "encoded_exfil",
+      "severity": "high",
+      "category": "exfiltration",
+      "file": "examples\\class-payments-rendered.html",
+      "line": 162,
+      "match": "src: url(data:font/woff2;base64,d09GMgABAAAAAC1MABIAAAAAdAQAACzjAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGoJLG4ouHIM+BmA/U1RBV...",
+      "description": "base64 encoding combined with environment access"
+    },
+    {
+      "pattern_id": "encoded_exfil",
+      "severity": "high",
+      "category": "exfiltration",
+      "file": "examples\\dataflow-product-analytics.html",
+      "line": 162,
+      "match": "src: url(data:font/woff2;base64,d09GMgABAAAAAC1MABIAAAAAdAQAACzjAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGoJLG4ouHIM+BmA/U1RBV...",
+      "description": "base64 encoding combined with environment access"
+    },
+    {
+      "pattern_id": "encoded_exfil",
+      "severity": "high",
+      "category": "exfiltration",
+      "file": "examples\\erd-orders-rendered.html",
+      "line": 162,
+      "match": "src: url(data:font/woff2;base64,d09GMgABAAAAAC1MABIAAAAAdAQAACzjAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGoJLG4ouHIM+BmA/U1RBV...",
+      "description": "base64 encoding combined with environment access"
+    },
+    {
+      "pattern_id": "encoded_exfil",
+      "severity": "high",
+      "category": "exfiltration",
+      "file": "examples\\lifecycle-agent-run.html",
+      "line": 162,
+      "match": "src: url(data:font/woff2;base64,d09GMgABAAAAAC1MABIAAAAAdAQAACzjAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGoJLG4ouHIM+BmA/U1RBV...",
+      "description": "base64 encoding combined with environment access"
+    },
+    {
+      "pattern_id": "encoded_exfil",
+      "severity": "high",
+      "category": "exfiltration",
+      "file": "examples\\sequence-cache-miss-request.html",
+      "line": 162,
+      "match": "src: url(data:font/woff2;base64,d09GMgABAAAAAC1MABIAAAAAdAQAACzjAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGoJLG4ouHIM+BmA/U1RBV...",
+      "description": "base64 encoding combined with environment access"
+    },
+    {
+      "pattern_id": "encoded_exfil",
+      "severity": "high",
+      "category": "exfiltration",
+      "file": "examples\\subscription-billing-rendered.html",
+      "line": 162,
+      "match": "src: url(data:font/woff2;base64,d09GMgABAAAAAC1MABIAAAAAdAQAACzjAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGoJLG4ouHIM+BmA/U1RBV...",
+      "description": "base64 encoding combined with environment access"
+    },
+    {
+      "pattern_id": "encoded_exfil",
+      "severity": "high",
+      "category": "exfiltration",
+      "file": "examples\\timeline-archify-dev-activity-rendered.html",
+      "line": 162,
+      "match": "src: url(data:font/woff2;base64,d09GMgABAAAAAC1MABIAAAAAdAQAACzjAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGoJLG4ouHIM+BmA/U1RBV...",
+      "description": "base64 encoding combined with environment access"
+    },
+    {
+      "pattern_id": "encoded_exfil",
+      "severity": "high",
+      "category": "exfiltration",
+      "file": "examples\\timeline-payment-incident-rendered.html",
+      "line": 162,
+      "match": "src: url(data:font/woff2;base64,d09GMgABAAAAAC1MABIAAAAAdAQAACzjAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGoJLG4ouHIM+BmA/U1RBV...",
+      "description": "base64 encoding combined with environment access"
+    },
+    {
+      "pattern_id": "encoded_exfil",
+      "severity": "high",
+      "category": "exfiltration",
+      "file": "examples\\tree-archify-repository-rendered.html",
+      "line": 162,
+      "match": "src: url(data:font/woff2;base64,d09GMgABAAAAAC1MABIAAAAAdAQAACzjAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGoJLG4ouHIM+BmA/U1RBV...",
+      "description": "base64 encoding combined with environment access"
+    },
+    {
+      "pattern_id": "encoded_exfil",
+      "severity": "high",
+      "category": "exfiltration",
+      "file": "examples\\tree-payment-platform-rendered.html",
+      "line": 162,
+      "match": "src: url(data:font/woff2;base64,d09GMgABAAAAAC1MABIAAAAAdAQAACzjAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGoJLG4ouHIM+BmA/U1RBV...",
+      "description": "base64 encoding combined with environment access"
+    },
+    {
+      "pattern_id": "encoded_exfil",
+      "severity": "high",
+      "category": "exfiltration",
+      "file": "examples\\waterfall-checkout-request-rendered.html",
+      "line": 162,
+      "match": "src: url(data:font/woff2;base64,d09GMgABAAAAAC1MABIAAAAAdAQAACzjAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGoJLG4ouHIM+BmA/U1RBV...",
+      "description": "base64 encoding combined with environment access"
+    },
+    {
+      "pattern_id": "encoded_exfil",
+      "severity": "high",
+      "category": "exfiltration",
+      "file": "examples\\waterfall-example-rebuild-rendered.html",
+      "line": 162,
+      "match": "src: url(data:font/woff2;base64,d09GMgABAAAAAC1MABIAAAAAdAQAACzjAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGoJLG4ouHIM+BmA/U1RBV...",
+      "description": "base64 encoding combined with environment access"
+    },
+    {
+      "pattern_id": "encoded_exfil",
+      "severity": "high",
+      "category": "exfiltration",
+      "file": "examples\\web-app-rendered.html",
+      "line": 162,
+      "match": "src: url(data:font/woff2;base64,d09GMgABAAAAAC1MABIAAAAAdAQAACzjAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGoJLG4ouHIM+BmA/U1RBV...",
+      "description": "base64 encoding combined with environment access"
+    },
+    {
+      "pattern_id": "encoded_exfil",
+      "severity": "high",
+      "category": "exfiltration",
+      "file": "examples\\workflow-agent-tool-call-rendered.html",
+      "line": 162,
+      "match": "src: url(data:font/woff2;base64,d09GMgABAAAAAC1MABIAAAAAdAQAACzjAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGoJLG4ouHIM+BmA/U1RBV...",
+      "description": "base64 encoding combined with environment access"
+    },
+    {
+      "pattern_id": "unicode_escape_chain",
+      "severity": "medium",
+      "category": "obfuscation",
+      "file": "schemas\\common.schema.json",
+      "line": 37,
+      "match": "{ \"not\": { \"pattern\": \"[\\\\\\\\<>:\\\"|?*\\\\u0000-\\\\u001F\\\\u007F-\\\\u009F]\" } },",
+      "description": "chain of unicode escapes (possible obfuscation)"
+    }
+  ],
+  "rules": [
+    "encoded_exfil",
+    "oversized_file",
+    "oversized_skill",
+    "too_many_files",
+    "unicode_escape_chain"
+  ],
+  "scanned_at": "2026-10-18T15:10:37.259404+00:00",
+  "summary": "archify: caution \u2014 37 finding(s) in exfiltration, obfuscation, structural",
+  "fresh": true
+}

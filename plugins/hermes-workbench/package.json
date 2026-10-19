@@ -1,0 +1,25 @@
+{
+  "name": "hermes-workbench",
+  "version": "0.2.1",
+  "private": true,
+  "type": "module",
+  "description": "The Hermes desktop app in your browser, as a Hermes plugin.",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "tsx --test tests/*.test.ts",
+    "typecheck": "tsc --noEmit",
+    "install:plugin": "node scripts/install.mjs",
+    "smoke:fixture": "node scripts/fixture-smoke.mjs",
+    "smoke:desktop": "node scripts/desktop-smoke.mjs"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.0",
+    "tsx": "^4.20.0",
+    "typescript": "^5.9.0",
+    "@playwright/test": "^1.55.0"
+  },
+  "dependencies": {
+    "dompurify": "^3.2.0",
+    "marked": "^16.0.0"
+  }
+}

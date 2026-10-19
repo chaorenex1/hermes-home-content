@@ -1,0 +1,2 @@
+[console_scripts]
+bgs-papyrus = bgs_papyrus.cli:main

@@ -1,0 +1,5 @@
+Metadata-Version: 2.4
+Name: bgs-papyrus
+Version: 0.1.0
+Summary: Agent-native Papyrus compile/decompile CLI for Skyrim, Fallout 4, Starfield
+Requires-Python: >=3.11

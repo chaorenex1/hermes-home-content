@@ -1,0 +1,3 @@
+[console_scripts]
+bgs-translator = bgs_translator.cli.app:main
+xtl = bgs_translator.cli.app:main

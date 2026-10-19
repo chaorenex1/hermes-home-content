@@ -1,0 +1,8 @@
+{
+  "package": "quota",
+  "source": "<HERMES_HOME>\\plugins\\quota\\desktop",
+  "sourceMtimeMs": 1791950962524.1487,
+  "catalogName": "quota",
+  "repo": "https://github.com/rarf/hermes-quota-plugin",
+  "sha": "ce8593a25ff61c32dd1e929fe2f87502cb6408cc"
+}

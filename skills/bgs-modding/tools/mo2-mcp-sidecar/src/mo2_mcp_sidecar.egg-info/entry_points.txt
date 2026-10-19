@@ -1,0 +1,2 @@
+[console_scripts]
+mo2-mcp-sidecar = mo2_mcp_sidecar.__main__:main

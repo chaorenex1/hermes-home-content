@@ -1,0 +1,259 @@
+{
+  "unlocks": {
+    "actually_read_the_logs": {
+      "evidence": null,
+      "first_tier": "Copper",
+      "unlocked_at": 1784510167
+    },
+    "autonomous_avalanche": {
+      "evidence": null,
+      "first_tier": "Gold",
+      "unlocked_at": 1784510167
+    },
+    "background_process_enjoyer": {
+      "evidence": null,
+      "first_tier": "Copper",
+      "unlocked_at": 1784510167
+    },
+    "browser_possession": {
+      "evidence": null,
+      "first_tier": "Silver",
+      "unlocked_at": 1784510167
+    },
+    "cache_hit_appreciator": {
+      "evidence": null,
+      "first_tier": "Copper",
+      "unlocked_at": 1784510167
+    },
+    "claude_confidant": {
+      "evidence": null,
+      "first_tier": "Diamond",
+      "unlocked_at": 1784510167
+    },
+    "codex_conjurer": {
+      "evidence": null,
+      "first_tier": "Silver",
+      "unlocked_at": 1784510167
+    },
+    "config_surgeon": {
+      "evidence": null,
+      "first_tier": "Diamond",
+      "unlocked_at": 1784510167
+    },
+    "context_dragon": {
+      "evidence": null,
+      "first_tier": "Copper",
+      "unlocked_at": 1784510167
+    },
+    "dependency_hell_tourist": {
+      "evidence": null,
+      "first_tier": null,
+      "unlocked_at": 1784510167
+    },
+    "docker_name_collision": {
+      "evidence": null,
+      "first_tier": "Copper",
+      "unlocked_at": 1784510167
+    },
+    "docs_archaeologist": {
+      "evidence": null,
+      "first_tier": "Copper",
+      "unlocked_at": 1784510167
+    },
+    "file_archaeologist": {
+      "evidence": null,
+      "first_tier": "Silver",
+      "unlocked_at": 1784510167
+    },
+    "five_model_flight": {
+      "evidence": null,
+      "first_tier": "Silver",
+      "unlocked_at": 1784510167
+    },
+    "forgot_the_env_var": {
+      "evidence": null,
+      "first_tier": "Copper",
+      "unlocked_at": 1784510167
+    },
+    "gateway_dweller": {
+      "evidence": null,
+      "first_tier": "Silver",
+      "unlocked_at": 1784510167
+    },
+    "gemini_cartographer": {
+      "evidence": null,
+      "first_tier": "Silver",
+      "unlocked_at": 1784510167
+    },
+    "let_him_cook": {
+      "evidence": {
+        "session_id": "20260629_201007_89c2bb",
+        "title": "BGS-MO2 \u6280\u80fd\u521b\u5efa",
+        "value": 481
+      },
+      "first_tier": "Copper",
+      "unlocked_at": 1784510167
+    },
+    "marathon_operator": {
+      "evidence": null,
+      "first_tier": "Silver",
+      "unlocked_at": 1784510167
+    },
+    "model_hopper": {
+      "evidence": null,
+      "first_tier": "Copper",
+      "unlocked_at": 1784510167
+    },
+    "model_sommelier": {
+      "evidence": null,
+      "first_tier": "Olympian",
+      "unlocked_at": 1784510167
+    },
+    "multi_model_mage": {
+      "evidence": null,
+      "first_tier": "Copper",
+      "unlocked_at": 1784510167
+    },
+    "night_shift_operator": {
+      "evidence": null,
+      "first_tier": "Copper",
+      "unlocked_at": 1784510167
+    },
+    "one_character_fix": {
+      "evidence": null,
+      "first_tier": null,
+      "unlocked_at": 1784510167
+    },
+    "one_more_small_change": {
+      "evidence": {
+        "session_id": "20260701_232343_58733b",
+        "title": "\u6d4b\u8bd5xEdit MCP",
+        "value": 161
+      },
+      "first_tier": "Copper",
+      "unlocked_at": 1784510167
+    },
+    "openrouter_enjoyer": {
+      "evidence": null,
+      "first_tier": "Copper",
+      "unlocked_at": 1784510167
+    },
+    "patch_wizard": {
+      "evidence": null,
+      "first_tier": "Silver",
+      "unlocked_at": 1784510167
+    },
+    "plugin_goblin": {
+      "evidence": null,
+      "first_tier": "Gold",
+      "unlocked_at": 1784510167
+    },
+    "port_3000_taken": {
+      "evidence": null,
+      "first_tier": "Copper",
+      "unlocked_at": 1784680989
+    },
+    "provider_polyglot": {
+      "evidence": null,
+      "first_tier": "Copper",
+      "unlocked_at": 1782120155
+    },
+    "rebase_acrobat": {
+      "evidence": null,
+      "first_tier": "Silver",
+      "unlocked_at": 1784510167
+    },
+    "red_text_connoisseur": {
+      "evidence": null,
+      "first_tier": "Silver",
+      "unlocked_at": 1784510167
+    },
+    "rollback_wizard": {
+      "evidence": null,
+      "first_tier": "Copper",
+      "unlocked_at": 1784510167
+    },
+    "screenshot_hunter": {
+      "evidence": null,
+      "first_tier": "Gold",
+      "unlocked_at": 1784510167
+    },
+    "skill_issue_skill_created": {
+      "evidence": null,
+      "first_tier": "Silver",
+      "unlocked_at": 1784510167
+    },
+    "skillsmith": {
+      "evidence": null,
+      "first_tier": "Silver",
+      "unlocked_at": 1784510167
+    },
+    "stack_trace_sommelier": {
+      "evidence": null,
+      "first_tier": "Silver",
+      "unlocked_at": 1784510167
+    },
+    "subagent_commander": {
+      "evidence": null,
+      "first_tier": "Copper",
+      "unlocked_at": 1784510167
+    },
+    "supposed_to_be_quick": {
+      "evidence": {
+        "session_id": "20260629_201007_89c2bb",
+        "title": "BGS-MO2 \u6280\u80fd\u521b\u5efa",
+        "value": 1090
+      },
+      "first_tier": "Silver",
+      "unlocked_at": 1784510167
+    },
+    "terminal_goblin": {
+      "evidence": null,
+      "first_tier": "Silver",
+      "unlocked_at": 1784510167
+    },
+    "test_suite_tamer": {
+      "evidence": null,
+      "first_tier": "Diamond",
+      "unlocked_at": 1784510167
+    },
+    "the_fix_was_restarting": {
+      "evidence": null,
+      "first_tier": null,
+      "unlocked_at": 1784510167
+    },
+    "toolchain_maxxer": {
+      "evidence": {
+        "session_id": "20260702_135749_eda365",
+        "title": "ESP\u51b2\u7a81\u70ed\u529b\u56fe\u62a5\u544a",
+        "value": 21
+      },
+      "first_tier": "Copper",
+      "unlocked_at": 1784510167
+    },
+    "toolset_cartographer": {
+      "evidence": null,
+      "first_tier": "Olympian",
+      "unlocked_at": 1784510167
+    },
+    "vibe_architect": {
+      "evidence": {
+        "session_id": "cron_9365b8662d18_20260716_205546",
+        "title": "Hermes Patch Compatibility Watch \u00b7 Jul 16 20:59",
+        "value": 337
+      },
+      "first_tier": "Copper",
+      "unlocked_at": 1784510167
+    },
+    "weekend_warrior": {
+      "evidence": null,
+      "first_tier": "Copper",
+      "unlocked_at": 1784510167
+    },
+    "yaml_colon_incident": {
+      "evidence": null,
+      "first_tier": "Copper",
+      "unlocked_at": 1784510167
+    }
+  }
+}

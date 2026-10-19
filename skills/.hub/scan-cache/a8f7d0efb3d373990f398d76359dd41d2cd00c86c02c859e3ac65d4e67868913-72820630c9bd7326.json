@@ -1,0 +1,25 @@
+{
+  "bundle_hash": "sha256:a8f7d0efb3d373990f398d76359dd41d2cd00c86c02c859e3ac65d4e67868913",
+  "scanner_version": "skills-guard-v8",
+  "source": "https://raw.githubusercontent.com/miqdadbadjuber/anti-slop/main/skills/antislop-copywriting/SKILL.md",
+  "source_url": "https://raw.githubusercontent.com/miqdadbadjuber/anti-slop/main/skills/antislop-copywriting/SKILL.md",
+  "verdict": "safe",
+  "trust_level": "community",
+  "findings": [
+    {
+      "pattern_id": "allowed_tools_field",
+      "severity": "low",
+      "category": "privilege_escalation",
+      "file": "SKILL.md",
+      "line": 4,
+      "match": "allowed-tools: Read Write Edit Glob Grep",
+      "description": "skill declares allowed-tools (standard frontmatter; informational)"
+    }
+  ],
+  "rules": [
+    "allowed_tools_field"
+  ],
+  "scanned_at": "2026-10-09T11:38:56.365056+00:00",
+  "summary": "antislop-copywriting: safe \u2014 1 finding(s) in privilege_escalation",
+  "fresh": true
+}

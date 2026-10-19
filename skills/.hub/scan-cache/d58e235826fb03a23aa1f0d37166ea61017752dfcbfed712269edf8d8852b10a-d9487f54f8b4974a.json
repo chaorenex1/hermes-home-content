@@ -1,0 +1,53 @@
+{
+  "bundle_hash": "sha256:d58e235826fb03a23aa1f0d37166ea61017752dfcbfed712269edf8d8852b10a",
+  "scanner_version": "skills-guard-v8",
+  "source": "https://raw.githubusercontent.com/miqdadbadjuber/anti-slop/main/skills/antislop/SKILL.md",
+  "source_url": "https://raw.githubusercontent.com/miqdadbadjuber/anti-slop/main/skills/antislop/SKILL.md",
+  "verdict": "safe",
+  "trust_level": "community",
+  "findings": [
+    {
+      "pattern_id": "allowed_tools_field",
+      "severity": "low",
+      "category": "privilege_escalation",
+      "file": "SKILL.md",
+      "line": 4,
+      "match": "allowed-tools: Read Write Edit Glob Grep",
+      "description": "skill declares allowed-tools (standard frontmatter; informational)"
+    },
+    {
+      "pattern_id": "agent_config_ref",
+      "severity": "low",
+      "category": "persistence",
+      "file": "SKILL.md",
+      "line": 20,
+      "match": "**Skip this section** if the project's entry file (`AGENTS.md`, `CLAUDE.md`, `GEMINI.md`, or the equivalent the runni...",
+      "description": "references agent config files (informational; only modification intent is scored)"
+    },
+    {
+      "pattern_id": "agent_config_ref",
+      "severity": "low",
+      "category": "persistence",
+      "file": "SKILL.md",
+      "line": 42,
+      "match": "5. **Append the pointer block at the END of the project's entry file** (the file the running tool reads at session st...",
+      "description": "references agent config files (informational; only modification intent is scored)"
+    },
+    {
+      "pattern_id": "agent_config_ref",
+      "severity": "low",
+      "category": "persistence",
+      "file": "SKILL.md",
+      "line": 131,
+      "match": "- `AGENTS.md` (or `CLAUDE.md`, `GEMINI.md`, etc.) routes the agent: \"for UI work, read `DESIGN.md` for direction, the...",
+      "description": "references agent config files (informational; only modification intent is scored)"
+    }
+  ],
+  "rules": [
+    "agent_config_ref",
+    "allowed_tools_field"
+  ],
+  "scanned_at": "2026-10-09T11:37:48.835522+00:00",
+  "summary": "antislop: safe \u2014 4 finding(s) in persistence, privilege_escalation",
+  "fresh": true
+}

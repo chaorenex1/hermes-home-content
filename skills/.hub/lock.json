@@ -1,0 +1,1447 @@
+{
+  "version": 1,
+  "installed": {
+    "desktop-control": {
+      "source": "clawhub",
+      "identifier": "desktop-control",
+      "trust_level": "community",
+      "scan_verdict": "safe",
+      "content_hash": "sha256:883a5fab23e01386",
+      "install_path": "desktop-control",
+      "files": [
+        "__init__.py",
+        "AI_AGENT_GUIDE.md",
+        "ai_agent.py",
+        "demo.py",
+        "QUICK_REFERENCE.md",
+        "skill-card.md",
+        "SKILL.md",
+        "_meta.json"
+      ],
+      "metadata": {},
+      "installed_at": "2026-06-23T09:45:03.586467+00:00",
+      "updated_at": "2026-06-23T09:45:03.586467+00:00"
+    },
+    "browser-automation-cdp": {
+      "source": "clawhub",
+      "identifier": "browser-automation-cdp",
+      "trust_level": "community",
+      "scan_verdict": "safe",
+      "content_hash": "sha256:a60b160c9638c36d",
+      "install_path": "browser-automation-cdp",
+      "files": [
+        "_meta.json",
+        "cdp-automation.js",
+        "EXAMPLES.md",
+        "REFERENCE.md",
+        "setup.json",
+        "skill-card.md",
+        "SKILL.md"
+      ],
+      "metadata": {},
+      "installed_at": "2026-06-23T09:50:01.540050+00:00",
+      "updated_at": "2026-06-23T09:50:01.540050+00:00"
+    },
+    "multi-search-engine": {
+      "source": "clawhub",
+      "identifier": "multi-search-engine",
+      "trust_level": "community",
+      "scan_verdict": "safe",
+      "content_hash": "sha256:e86264032783a124",
+      "install_path": "multi-search-engine",
+      "files": [
+        "_meta.json",
+        "CHANGELOG.md",
+        "CHANNELLOG.md",
+        "config.json",
+        "metadata.json",
+        "references/advanced-search.md",
+        "references/international-search.md",
+        "skill-card.md",
+        "SKILL.md"
+      ],
+      "metadata": {},
+      "installed_at": "2026-07-02T14:52:09.265226+00:00",
+      "updated_at": "2026-07-02T14:52:09.265226+00:00"
+    },
+    "axolotl": {
+      "source": "official",
+      "identifier": "official/mlops\\training\\axolotl",
+      "trust_level": "builtin",
+      "scan_verdict": "dangerous",
+      "content_hash": "sha256:da3f712b562a4b6f",
+      "install_path": "axolotl",
+      "files": [
+        "SKILL.md",
+        "references\\api.md",
+        "references\\dataset-formats.md",
+        "references\\index.md",
+        "references\\other.md"
+      ],
+      "metadata": {},
+      "installed_at": "2026-07-05T04:06:50.010716+00:00",
+      "updated_at": "2026-07-05T04:06:50.010716+00:00"
+    },
+    "baoyu-comic": {
+      "source": "official",
+      "identifier": "official/creative\\baoyu-comic",
+      "trust_level": "builtin",
+      "scan_verdict": "safe",
+      "content_hash": "sha256:ecc5a5747fa66c07",
+      "install_path": "baoyu-comic",
+      "files": [
+        "PORT_NOTES.md",
+        "SKILL.md",
+        "references\\analysis-framework.md",
+        "references\\auto-selection.md",
+        "references\\base-prompt.md",
+        "references\\character-template.md",
+        "references\\ohmsha-guide.md",
+        "references\\partial-workflows.md",
+        "references\\storyboard-template.md",
+        "references\\workflow.md",
+        "references\\art-styles\\chalk.md",
+        "references\\art-styles\\ink-brush.md",
+        "references\\art-styles\\ligne-claire.md",
+        "references\\art-styles\\manga.md",
+        "references\\art-styles\\minimalist.md",
+        "references\\art-styles\\realistic.md",
+        "references\\layouts\\cinematic.md",
+        "references\\layouts\\dense.md",
+        "references\\layouts\\four-panel.md",
+        "references\\layouts\\mixed.md",
+        "references\\layouts\\splash.md",
+        "references\\layouts\\standard.md",
+        "references\\layouts\\webtoon.md",
+        "references\\presets\\concept-story.md",
+        "references\\presets\\four-panel.md",
+        "references\\presets\\ohmsha.md",
+        "references\\presets\\shoujo.md",
+        "references\\presets\\wuxia.md",
+        "references\\tones\\action.md",
+        "references\\tones\\dramatic.md",
+        "references\\tones\\energetic.md",
+        "references\\tones\\neutral.md",
+        "references\\tones\\romantic.md",
+        "references\\tones\\vintage.md",
+        "references\\tones\\warm.md"
+      ],
+      "metadata": {},
+      "installed_at": "2026-07-05T04:06:59.124934+00:00",
+      "updated_at": "2026-07-05T04:06:59.124934+00:00"
+    },
+    "blender-mcp": {
+      "source": "official",
+      "identifier": "official/creative\\blender-mcp",
+      "trust_level": "builtin",
+      "scan_verdict": "safe",
+      "content_hash": "sha256:078712858b3b6e95",
+      "install_path": "blender-mcp",
+      "files": [
+        "SKILL.md"
+      ],
+      "metadata": {},
+      "installed_at": "2026-07-05T04:07:37.960716+00:00",
+      "updated_at": "2026-07-05T04:07:37.960716+00:00"
+    },
+    "kanban-video-orchestrator": {
+      "source": "official",
+      "identifier": "official/creative\\kanban-video-orchestrator",
+      "trust_level": "builtin",
+      "scan_verdict": "safe",
+      "content_hash": "sha256:9fe2363ec658e98a",
+      "install_path": "kanban-video-orchestrator",
+      "files": [
+        "SKILL.md",
+        "assets\\brief.md.tmpl",
+        "assets\\setup.sh.tmpl",
+        "assets\\soul.md.tmpl",
+        "references\\examples.md",
+        "references\\intake.md",
+        "references\\kanban-setup.md",
+        "references\\monitoring.md",
+        "references\\role-archetypes.md",
+        "references\\tool-matrix.md",
+        "scripts\\bootstrap_pipeline.py",
+        "scripts\\monitor.py"
+      ],
+      "metadata": {},
+      "installed_at": "2026-07-05T04:09:54.626413+00:00",
+      "updated_at": "2026-07-05T04:09:54.626413+00:00"
+    },
+    "excel-author": {
+      "source": "official",
+      "identifier": "official/finance\\excel-author",
+      "trust_level": "builtin",
+      "scan_verdict": "safe",
+      "content_hash": "sha256:a2ae410c548602b0",
+      "install_path": "excel-author",
+      "files": [
+        "SKILL.md",
+        "scripts\\recalc.py"
+      ],
+      "metadata": {},
+      "installed_at": "2026-07-05T04:11:18.531832+00:00",
+      "updated_at": "2026-07-05T04:11:18.531832+00:00"
+    },
+    "page-agent": {
+      "source": "official",
+      "identifier": "official/web-development\\page-agent",
+      "trust_level": "builtin",
+      "scan_verdict": "safe",
+      "content_hash": "sha256:d1bfdd031da222b1",
+      "install_path": "page-agent",
+      "files": [
+        "SKILL.md"
+      ],
+      "metadata": {},
+      "installed_at": "2026-07-05T04:13:20.051646+00:00",
+      "updated_at": "2026-07-05T04:13:20.051646+00:00"
+    },
+    "canvas-design": {
+      "source": "github",
+      "identifier": "anthropics/skills/skills/canvas-design",
+      "trust_level": "trusted",
+      "scan_verdict": "caution",
+      "content_hash": "sha256:d53737ce2b44becc",
+      "install_path": "canvas-design",
+      "files": [
+        "LICENSE.txt",
+        "SKILL.md",
+        "canvas-fonts/ArsenalSC-OFL.txt",
+        "canvas-fonts/ArsenalSC-Regular.ttf",
+        "canvas-fonts/BigShoulders-Bold.ttf",
+        "canvas-fonts/BigShoulders-OFL.txt",
+        "canvas-fonts/BigShoulders-Regular.ttf",
+        "canvas-fonts/Boldonse-OFL.txt",
+        "canvas-fonts/Boldonse-Regular.ttf",
+        "canvas-fonts/BricolageGrotesque-Bold.ttf",
+        "canvas-fonts/BricolageGrotesque-OFL.txt",
+        "canvas-fonts/BricolageGrotesque-Regular.ttf",
+        "canvas-fonts/CrimsonPro-Bold.ttf",
+        "canvas-fonts/CrimsonPro-Italic.ttf",
+        "canvas-fonts/CrimsonPro-OFL.txt",
+        "canvas-fonts/CrimsonPro-Regular.ttf",
+        "canvas-fonts/DMMono-OFL.txt",
+        "canvas-fonts/DMMono-Regular.ttf",
+        "canvas-fonts/EricaOne-OFL.txt",
+        "canvas-fonts/EricaOne-Regular.ttf",
+        "canvas-fonts/GeistMono-Bold.ttf",
+        "canvas-fonts/GeistMono-OFL.txt",
+        "canvas-fonts/GeistMono-Regular.ttf",
+        "canvas-fonts/Gloock-OFL.txt",
+        "canvas-fonts/Gloock-Regular.ttf",
+        "canvas-fonts/IBMPlexMono-Bold.ttf",
+        "canvas-fonts/IBMPlexMono-OFL.txt",
+        "canvas-fonts/IBMPlexMono-Regular.ttf",
+        "canvas-fonts/IBMPlexSerif-Bold.ttf",
+        "canvas-fonts/IBMPlexSerif-BoldItalic.ttf",
+        "canvas-fonts/IBMPlexSerif-Italic.ttf",
+        "canvas-fonts/IBMPlexSerif-Regular.ttf",
+        "canvas-fonts/InstrumentSans-Bold.ttf",
+        "canvas-fonts/InstrumentSans-BoldItalic.ttf",
+        "canvas-fonts/InstrumentSans-Italic.ttf",
+        "canvas-fonts/InstrumentSans-OFL.txt",
+        "canvas-fonts/InstrumentSans-Regular.ttf",
+        "canvas-fonts/InstrumentSerif-Italic.ttf",
+        "canvas-fonts/InstrumentSerif-Regular.ttf",
+        "canvas-fonts/Italiana-OFL.txt",
+        "canvas-fonts/Italiana-Regular.ttf",
+        "canvas-fonts/JetBrainsMono-Bold.ttf",
+        "canvas-fonts/JetBrainsMono-OFL.txt",
+        "canvas-fonts/JetBrainsMono-Regular.ttf",
+        "canvas-fonts/Jura-Light.ttf",
+        "canvas-fonts/Jura-Medium.ttf",
+        "canvas-fonts/Jura-OFL.txt",
+        "canvas-fonts/LibreBaskerville-OFL.txt",
+        "canvas-fonts/LibreBaskerville-Regular.ttf",
+        "canvas-fonts/Lora-Bold.ttf",
+        "canvas-fonts/Lora-BoldItalic.ttf",
+        "canvas-fonts/Lora-Italic.ttf",
+        "canvas-fonts/Lora-OFL.txt",
+        "canvas-fonts/Lora-Regular.ttf",
+        "canvas-fonts/NationalPark-Bold.ttf",
+        "canvas-fonts/NationalPark-OFL.txt",
+        "canvas-fonts/NationalPark-Regular.ttf",
+        "canvas-fonts/NothingYouCouldDo-OFL.txt",
+        "canvas-fonts/NothingYouCouldDo-Regular.ttf",
+        "canvas-fonts/Outfit-Bold.ttf",
+        "canvas-fonts/Outfit-OFL.txt",
+        "canvas-fonts/Outfit-Regular.ttf",
+        "canvas-fonts/PixelifySans-Medium.ttf",
+        "canvas-fonts/PixelifySans-OFL.txt",
+        "canvas-fonts/PoiretOne-OFL.txt",
+        "canvas-fonts/PoiretOne-Regular.ttf",
+        "canvas-fonts/RedHatMono-Bold.ttf",
+        "canvas-fonts/RedHatMono-OFL.txt",
+        "canvas-fonts/RedHatMono-Regular.ttf",
+        "canvas-fonts/Silkscreen-OFL.txt",
+        "canvas-fonts/Silkscreen-Regular.ttf",
+        "canvas-fonts/SmoochSans-Medium.ttf",
+        "canvas-fonts/SmoochSans-OFL.txt",
+        "canvas-fonts/Tektur-Medium.ttf",
+        "canvas-fonts/Tektur-OFL.txt",
+        "canvas-fonts/Tektur-Regular.ttf",
+        "canvas-fonts/WorkSans-Bold.ttf",
+        "canvas-fonts/WorkSans-BoldItalic.ttf",
+        "canvas-fonts/WorkSans-Italic.ttf",
+        "canvas-fonts/WorkSans-OFL.txt",
+        "canvas-fonts/WorkSans-Regular.ttf",
+        "canvas-fonts/YoungSerif-OFL.txt",
+        "canvas-fonts/YoungSerif-Regular.ttf"
+      ],
+      "metadata": {},
+      "installed_at": "2026-07-05T04:18:59.027109+00:00",
+      "updated_at": "2026-07-05T04:18:59.027109+00:00"
+    },
+    "yuanbao": {
+      "source": "official",
+      "identifier": "official/yuanbao",
+      "trust_level": "builtin",
+      "scan_verdict": "backfilled",
+      "content_hash": "sha256:881625ad1581ec37",
+      "install_path": "yuanbao",
+      "files": [
+        "SKILL.md"
+      ],
+      "metadata": {
+        "backfilled_from": "optional-skills"
+      },
+      "installed_at": "2026-07-26T02:47:27.715575+00:00",
+      "updated_at": "2026-07-26T02:47:27.715575+00:00"
+    },
+    "polymarket": {
+      "source": "official",
+      "identifier": "official/research/polymarket",
+      "trust_level": "builtin",
+      "scan_verdict": "backfilled",
+      "content_hash": "sha256:ff496247e55a6337",
+      "install_path": "research/polymarket",
+      "files": [
+        "references/api-endpoints.md",
+        "scripts/polymarket.py",
+        "SKILL.md"
+      ],
+      "metadata": {
+        "backfilled_from": "optional-skills"
+      },
+      "installed_at": "2026-08-08T12:13:15.128953+00:00",
+      "updated_at": "2026-08-08T12:13:15.128953+00:00"
+    },
+    "ascii-art": {
+      "source": "official",
+      "identifier": "official/creative/ascii-art",
+      "trust_level": "builtin",
+      "scan_verdict": "backfilled",
+      "content_hash": "sha256:29e23c2fdb90e5ab",
+      "install_path": "creative/ascii-art",
+      "files": [
+        "SKILL.md"
+      ],
+      "metadata": {
+        "backfilled_from": "optional-skills"
+      },
+      "installed_at": "2026-09-12T08:09:31.349947+00:00",
+      "updated_at": "2026-09-12T08:09:31.349947+00:00"
+    },
+    "comfyui": {
+      "source": "official",
+      "identifier": "official/creative/comfyui",
+      "trust_level": "builtin",
+      "scan_verdict": "backfilled",
+      "content_hash": "sha256:612d22cb79d98990",
+      "install_path": "creative/comfyui",
+      "files": [
+        "references/official-cli.md",
+        "references/rest-api.md",
+        "references/template-integrity.md",
+        "references/workflow-format.md",
+        "scripts/_common.py",
+        "scripts/auto_fix_deps.py",
+        "scripts/check_deps.py",
+        "scripts/comfyui_setup.sh",
+        "scripts/extract_schema.py",
+        "scripts/fetch_logs.py",
+        "scripts/hardware_check.py",
+        "scripts/health_check.py",
+        "scripts/run_batch.py",
+        "scripts/run_workflow.py",
+        "scripts/ws_monitor.py",
+        "SKILL.md",
+        "tests/conftest.py",
+        "tests/pytest.ini",
+        "tests/README.md",
+        "tests/test_check_deps.py",
+        "tests/test_cloud_integration.py",
+        "tests/test_common.py",
+        "tests/test_extract_schema.py",
+        "tests/test_run_workflow.py",
+        "workflows/animatediff_video.json",
+        "workflows/flux_dev_txt2img.json",
+        "workflows/README.md",
+        "workflows/sd15_txt2img.json",
+        "workflows/sdxl_img2img.json",
+        "workflows/sdxl_inpaint.json",
+        "workflows/sdxl_txt2img.json",
+        "workflows/upscale_4x.json",
+        "workflows/wan_video_t2v.json"
+      ],
+      "metadata": {
+        "backfilled_from": "optional-skills"
+      },
+      "installed_at": "2026-09-12T08:09:31.397232+00:00",
+      "updated_at": "2026-09-12T08:09:31.397232+00:00"
+    },
+    "excalidraw": {
+      "source": "official",
+      "identifier": "official/creative/excalidraw",
+      "trust_level": "builtin",
+      "scan_verdict": "backfilled",
+      "content_hash": "sha256:359112274e8262e0",
+      "install_path": "creative/excalidraw",
+      "files": [
+        "references/colors.md",
+        "references/dark-mode.md",
+        "references/examples.md",
+        "scripts/upload.py",
+        "SKILL.md"
+      ],
+      "metadata": {
+        "backfilled_from": "optional-skills"
+      },
+      "installed_at": "2026-09-12T08:09:31.406295+00:00",
+      "updated_at": "2026-09-12T08:09:31.406295+00:00"
+    },
+    "pretext": {
+      "source": "official",
+      "identifier": "official/creative/pretext",
+      "trust_level": "builtin",
+      "scan_verdict": "backfilled",
+      "content_hash": "sha256:9e2e8f6151b4be1b",
+      "install_path": "creative/pretext",
+      "files": [
+        "references/patterns.md",
+        "SKILL.md",
+        "templates/donut-orbit.html",
+        "templates/hello-orb-flow.html"
+      ],
+      "metadata": {
+        "backfilled_from": "optional-skills"
+      },
+      "installed_at": "2026-09-12T08:09:31.412246+00:00",
+      "updated_at": "2026-09-12T08:09:31.412246+00:00"
+    },
+    "sketch": {
+      "source": "official",
+      "identifier": "official/creative/sketch",
+      "trust_level": "builtin",
+      "scan_verdict": "backfilled",
+      "content_hash": "sha256:bea886ff483216bf",
+      "install_path": "creative/sketch",
+      "files": [
+        "SKILL.md"
+      ],
+      "metadata": {
+        "backfilled_from": "optional-skills"
+      },
+      "installed_at": "2026-09-12T08:09:31.414259+00:00",
+      "updated_at": "2026-09-12T08:09:31.414259+00:00"
+    },
+    "touchdesigner-mcp": {
+      "source": "official",
+      "identifier": "official/creative/touchdesigner-mcp",
+      "trust_level": "builtin",
+      "scan_verdict": "backfilled",
+      "content_hash": "sha256:0c6b0a3ffb64b73c",
+      "install_path": "creative/touchdesigner-mcp",
+      "files": [
+        "references/3d-scene.md",
+        "references/animation.md",
+        "references/audio-reactive.md",
+        "references/dat-scripting.md",
+        "references/external-data.md",
+        "references/geometry-comp.md",
+        "references/glsl.md",
+        "references/layout-compositor.md",
+        "references/mcp-tools.md",
+        "references/midi-osc.md",
+        "references/network-patterns.md",
+        "references/operator-tips.md",
+        "references/operators.md",
+        "references/panel-ui.md",
+        "references/particles.md",
+        "references/pitfalls.md",
+        "references/postfx.md",
+        "references/projection-mapping.md",
+        "references/python-api.md",
+        "references/replicator.md",
+        "references/troubleshooting.md",
+        "scripts/setup.sh",
+        "SKILL.md"
+      ],
+      "metadata": {
+        "backfilled_from": "optional-skills"
+      },
+      "installed_at": "2026-09-12T08:09:31.433362+00:00",
+      "updated_at": "2026-09-12T08:09:31.433362+00:00"
+    },
+    "evaluating-llms-harness": {
+      "source": "official",
+      "identifier": "official/mlops/evaluation/evaluating-llms-harness",
+      "trust_level": "builtin",
+      "scan_verdict": "backfilled",
+      "content_hash": "sha256:b518f45966286421",
+      "install_path": "mlops/evaluation/evaluating-llms-harness",
+      "files": [
+        "references/api-evaluation.md",
+        "references/benchmark-guide.md",
+        "references/custom-tasks.md",
+        "references/distributed-eval.md",
+        "SKILL.md"
+      ],
+      "metadata": {
+        "backfilled_from": "optional-skills"
+      },
+      "installed_at": "2026-09-12T08:09:31.442882+00:00",
+      "updated_at": "2026-09-12T08:09:31.442882+00:00"
+    },
+    "weights-and-biases": {
+      "source": "official",
+      "identifier": "official/mlops/evaluation/weights-and-biases",
+      "trust_level": "builtin",
+      "scan_verdict": "backfilled",
+      "content_hash": "sha256:4286e3db3985d52f",
+      "install_path": "mlops/evaluation/weights-and-biases",
+      "files": [
+        "references/artifacts.md",
+        "references/integrations.md",
+        "references/sweeps.md",
+        "SKILL.md"
+      ],
+      "metadata": {
+        "backfilled_from": "optional-skills"
+      },
+      "installed_at": "2026-09-12T08:09:31.446394+00:00",
+      "updated_at": "2026-09-12T08:09:31.446394+00:00"
+    },
+    "llama-cpp": {
+      "source": "official",
+      "identifier": "official/mlops/inference/llama-cpp",
+      "trust_level": "builtin",
+      "scan_verdict": "backfilled",
+      "content_hash": "sha256:43a4ec8fb07acce8",
+      "install_path": "mlops/inference/llama-cpp",
+      "files": [
+        "references/advanced-usage.md",
+        "references/hub-discovery.md",
+        "references/optimization.md",
+        "references/quantization.md",
+        "references/server.md",
+        "references/troubleshooting.md",
+        "SKILL.md"
+      ],
+      "metadata": {
+        "backfilled_from": "optional-skills"
+      },
+      "installed_at": "2026-09-12T08:09:31.453400+00:00",
+      "updated_at": "2026-09-12T08:09:31.453400+00:00"
+    },
+    "serving-llms-vllm": {
+      "source": "official",
+      "identifier": "official/mlops/inference/serving-llms-vllm",
+      "trust_level": "builtin",
+      "scan_verdict": "backfilled",
+      "content_hash": "sha256:688c281ab63bb0ea",
+      "install_path": "mlops/inference/serving-llms-vllm",
+      "files": [
+        "references/optimization.md",
+        "references/quantization.md",
+        "references/server-deployment.md",
+        "references/troubleshooting.md",
+        "SKILL.md"
+      ],
+      "metadata": {
+        "backfilled_from": "optional-skills"
+      },
+      "installed_at": "2026-09-12T08:09:31.459838+00:00",
+      "updated_at": "2026-09-12T08:09:31.459838+00:00"
+    },
+    "huggingface-hub": {
+      "source": "official",
+      "identifier": "official/mlops/huggingface-hub",
+      "trust_level": "builtin",
+      "scan_verdict": "backfilled",
+      "content_hash": "sha256:55fa8eb6c3b4be8c",
+      "install_path": "mlops/huggingface-hub",
+      "files": [
+        "SKILL.md"
+      ],
+      "metadata": {
+        "backfilled_from": "optional-skills"
+      },
+      "installed_at": "2026-09-12T08:09:31.461839+00:00",
+      "updated_at": "2026-09-12T08:09:31.461839+00:00"
+    },
+    "openhue": {
+      "source": "official",
+      "identifier": "official/smart-home/openhue",
+      "trust_level": "builtin",
+      "scan_verdict": "backfilled",
+      "content_hash": "sha256:177f4de2ef06e4d9",
+      "install_path": "smart-home/openhue",
+      "files": [
+        "SKILL.md"
+      ],
+      "metadata": {
+        "backfilled_from": "optional-skills"
+      },
+      "installed_at": "2026-09-12T08:09:31.536753+00:00",
+      "updated_at": "2026-09-12T08:09:31.536753+00:00"
+    },
+    "antislop": {
+      "source": "url",
+      "identifier": "https://raw.githubusercontent.com/miqdadbadjuber/anti-slop/main/skills/antislop/SKILL.md",
+      "trust_level": "community",
+      "scan_verdict": "safe",
+      "content_hash": "sha256:d58e235826fb03a2",
+      "install_path": "antislop",
+      "files": [
+        "SKILL.md"
+      ],
+      "metadata": {
+        "url": "https://raw.githubusercontent.com/miqdadbadjuber/anti-slop/main/skills/antislop/SKILL.md",
+        "source_url": "https://raw.githubusercontent.com/miqdadbadjuber/anti-slop/main/skills/antislop/SKILL.md",
+        "awaiting_name": false
+      },
+      "scan_provenance": {
+        "bundle_hash": "sha256:d58e235826fb03a23aa1f0d37166ea61017752dfcbfed712269edf8d8852b10a",
+        "scanner_version": "skills-guard-v8",
+        "source": "https://raw.githubusercontent.com/miqdadbadjuber/anti-slop/main/skills/antislop/SKILL.md",
+        "source_url": "https://raw.githubusercontent.com/miqdadbadjuber/anti-slop/main/skills/antislop/SKILL.md",
+        "verdict": "safe",
+        "trust_level": "community",
+        "findings": [
+          {
+            "pattern_id": "allowed_tools_field",
+            "severity": "low",
+            "category": "privilege_escalation",
+            "file": "SKILL.md",
+            "line": 4,
+            "match": "allowed-tools: Read Write Edit Glob Grep",
+            "description": "skill declares allowed-tools (standard frontmatter; informational)"
+          },
+          {
+            "pattern_id": "agent_config_ref",
+            "severity": "low",
+            "category": "persistence",
+            "file": "SKILL.md",
+            "line": 20,
+            "match": "**Skip this section** if the project's entry file (`AGENTS.md`, `CLAUDE.md`, `GEMINI.md`, or the equivalent the runni...",
+            "description": "references agent config files (informational; only modification intent is scored)"
+          },
+          {
+            "pattern_id": "agent_config_ref",
+            "severity": "low",
+            "category": "persistence",
+            "file": "SKILL.md",
+            "line": 42,
+            "match": "5. **Append the pointer block at the END of the project's entry file** (the file the running tool reads at session st...",
+            "description": "references agent config files (informational; only modification intent is scored)"
+          },
+          {
+            "pattern_id": "agent_config_ref",
+            "severity": "low",
+            "category": "persistence",
+            "file": "SKILL.md",
+            "line": 131,
+            "match": "- `AGENTS.md` (or `CLAUDE.md`, `GEMINI.md`, etc.) routes the agent: \"for UI work, read `DESIGN.md` for direction, the...",
+            "description": "references agent config files (informational; only modification intent is scored)"
+          }
+        ],
+        "rules": [
+          "agent_config_ref",
+          "allowed_tools_field"
+        ],
+        "scanned_at": "2026-10-09T11:37:48.835522+00:00",
+        "summary": "antislop: safe — 4 finding(s) in persistence, privilege_escalation",
+        "fresh": true
+      },
+      "installed_at": "2026-10-09T11:37:48.854288+00:00",
+      "updated_at": "2026-10-09T11:37:48.854288+00:00"
+    },
+    "antislop-ui": {
+      "source": "url",
+      "identifier": "https://raw.githubusercontent.com/miqdadbadjuber/anti-slop/main/skills/antislop-ui/SKILL.md",
+      "trust_level": "community",
+      "scan_verdict": "safe",
+      "content_hash": "sha256:dc7b30fd97eb2950",
+      "install_path": "antislop-ui",
+      "files": [
+        "SKILL.md"
+      ],
+      "metadata": {
+        "url": "https://raw.githubusercontent.com/miqdadbadjuber/anti-slop/main/skills/antislop-ui/SKILL.md",
+        "source_url": "https://raw.githubusercontent.com/miqdadbadjuber/anti-slop/main/skills/antislop-ui/SKILL.md",
+        "awaiting_name": false
+      },
+      "scan_provenance": {
+        "bundle_hash": "sha256:dc7b30fd97eb2950ffd7c198d96955028f7a8fafe3c3107ab712ea3de5067b31",
+        "scanner_version": "skills-guard-v8",
+        "source": "https://raw.githubusercontent.com/miqdadbadjuber/anti-slop/main/skills/antislop-ui/SKILL.md",
+        "source_url": "https://raw.githubusercontent.com/miqdadbadjuber/anti-slop/main/skills/antislop-ui/SKILL.md",
+        "verdict": "safe",
+        "trust_level": "community",
+        "findings": [
+          {
+            "pattern_id": "allowed_tools_field",
+            "severity": "low",
+            "category": "privilege_escalation",
+            "file": "SKILL.md",
+            "line": 4,
+            "match": "allowed-tools: Read Write Edit Glob Grep",
+            "description": "skill declares allowed-tools (standard frontmatter; informational)"
+          }
+        ],
+        "rules": [
+          "allowed_tools_field"
+        ],
+        "scanned_at": "2026-10-09T11:38:39.075267+00:00",
+        "summary": "antislop-ui: safe — 1 finding(s) in privilege_escalation",
+        "fresh": true
+      },
+      "installed_at": "2026-10-09T11:38:39.092152+00:00",
+      "updated_at": "2026-10-09T11:38:39.092152+00:00"
+    },
+    "antislop-copywriting": {
+      "source": "url",
+      "identifier": "https://raw.githubusercontent.com/miqdadbadjuber/anti-slop/main/skills/antislop-copywriting/SKILL.md",
+      "trust_level": "community",
+      "scan_verdict": "safe",
+      "content_hash": "sha256:a8f7d0efb3d37399",
+      "install_path": "antislop-copywriting",
+      "files": [
+        "SKILL.md"
+      ],
+      "metadata": {
+        "url": "https://raw.githubusercontent.com/miqdadbadjuber/anti-slop/main/skills/antislop-copywriting/SKILL.md",
+        "source_url": "https://raw.githubusercontent.com/miqdadbadjuber/anti-slop/main/skills/antislop-copywriting/SKILL.md",
+        "awaiting_name": false
+      },
+      "scan_provenance": {
+        "bundle_hash": "sha256:a8f7d0efb3d373990f398d76359dd41d2cd00c86c02c859e3ac65d4e67868913",
+        "scanner_version": "skills-guard-v8",
+        "source": "https://raw.githubusercontent.com/miqdadbadjuber/anti-slop/main/skills/antislop-copywriting/SKILL.md",
+        "source_url": "https://raw.githubusercontent.com/miqdadbadjuber/anti-slop/main/skills/antislop-copywriting/SKILL.md",
+        "verdict": "safe",
+        "trust_level": "community",
+        "findings": [
+          {
+            "pattern_id": "allowed_tools_field",
+            "severity": "low",
+            "category": "privilege_escalation",
+            "file": "SKILL.md",
+            "line": 4,
+            "match": "allowed-tools: Read Write Edit Glob Grep",
+            "description": "skill declares allowed-tools (standard frontmatter; informational)"
+          }
+        ],
+        "rules": [
+          "allowed_tools_field"
+        ],
+        "scanned_at": "2026-10-09T11:38:56.365056+00:00",
+        "summary": "antislop-copywriting: safe — 1 finding(s) in privilege_escalation",
+        "fresh": true
+      },
+      "installed_at": "2026-10-09T11:38:56.381854+00:00",
+      "updated_at": "2026-10-09T11:38:56.381854+00:00"
+    },
+    "antislop-human": {
+      "source": "url",
+      "identifier": "https://raw.githubusercontent.com/miqdadbadjuber/anti-slop/main/skills/antislop-human/SKILL.md",
+      "trust_level": "community",
+      "scan_verdict": "safe",
+      "content_hash": "sha256:89b7df6c645dffa9",
+      "install_path": "antislop-human",
+      "files": [
+        "SKILL.md"
+      ],
+      "metadata": {
+        "url": "https://raw.githubusercontent.com/miqdadbadjuber/anti-slop/main/skills/antislop-human/SKILL.md",
+        "source_url": "https://raw.githubusercontent.com/miqdadbadjuber/anti-slop/main/skills/antislop-human/SKILL.md",
+        "awaiting_name": false
+      },
+      "scan_provenance": {
+        "bundle_hash": "sha256:89b7df6c645dffa9218bd7cdb2701c8c7128815212d698fbba55a6fe12aaa25f",
+        "scanner_version": "skills-guard-v8",
+        "source": "https://raw.githubusercontent.com/miqdadbadjuber/anti-slop/main/skills/antislop-human/SKILL.md",
+        "source_url": "https://raw.githubusercontent.com/miqdadbadjuber/anti-slop/main/skills/antislop-human/SKILL.md",
+        "verdict": "safe",
+        "trust_level": "community",
+        "findings": [
+          {
+            "pattern_id": "allowed_tools_field",
+            "severity": "low",
+            "category": "privilege_escalation",
+            "file": "SKILL.md",
+            "line": 4,
+            "match": "allowed-tools: Bash(python *) Bash(python3 *) Read Write Edit Glob Grep",
+            "description": "skill declares allowed-tools (standard frontmatter; informational)"
+          }
+        ],
+        "rules": [
+          "allowed_tools_field"
+        ],
+        "scanned_at": "2026-10-09T11:39:11.624135+00:00",
+        "summary": "antislop-human: safe — 1 finding(s) in privilege_escalation",
+        "fresh": true
+      },
+      "installed_at": "2026-10-09T11:39:11.639708+00:00",
+      "updated_at": "2026-10-09T11:39:11.639708+00:00"
+    },
+    "antislop-layoutmobile": {
+      "source": "url",
+      "identifier": "https://raw.githubusercontent.com/miqdadbadjuber/anti-slop/main/skills/antislop-layoutmobile/SKILL.md",
+      "trust_level": "community",
+      "scan_verdict": "safe",
+      "content_hash": "sha256:9f99e98a2fdbe582",
+      "install_path": "antislop-layoutmobile",
+      "files": [
+        "SKILL.md"
+      ],
+      "metadata": {
+        "url": "https://raw.githubusercontent.com/miqdadbadjuber/anti-slop/main/skills/antislop-layoutmobile/SKILL.md",
+        "source_url": "https://raw.githubusercontent.com/miqdadbadjuber/anti-slop/main/skills/antislop-layoutmobile/SKILL.md",
+        "awaiting_name": false
+      },
+      "scan_provenance": {
+        "bundle_hash": "sha256:9f99e98a2fdbe5826cd5ff15c351130470fe65efdd97ff0f7a5c702d5372cb8a",
+        "scanner_version": "skills-guard-v8",
+        "source": "https://raw.githubusercontent.com/miqdadbadjuber/anti-slop/main/skills/antislop-layoutmobile/SKILL.md",
+        "source_url": "https://raw.githubusercontent.com/miqdadbadjuber/anti-slop/main/skills/antislop-layoutmobile/SKILL.md",
+        "verdict": "safe",
+        "trust_level": "community",
+        "findings": [
+          {
+            "pattern_id": "allowed_tools_field",
+            "severity": "low",
+            "category": "privilege_escalation",
+            "file": "SKILL.md",
+            "line": 4,
+            "match": "allowed-tools: Read Write Edit Glob Grep",
+            "description": "skill declares allowed-tools (standard frontmatter; informational)"
+          }
+        ],
+        "rules": [
+          "allowed_tools_field"
+        ],
+        "scanned_at": "2026-10-09T11:39:43.425985+00:00",
+        "summary": "antislop-layoutmobile: safe — 1 finding(s) in privilege_escalation",
+        "fresh": true
+      },
+      "installed_at": "2026-10-09T11:39:43.451275+00:00",
+      "updated_at": "2026-10-09T11:39:43.451275+00:00"
+    },
+    "antislop-code": {
+      "source": "url",
+      "identifier": "https://raw.githubusercontent.com/miqdadbadjuber/anti-slop/main/skills/antislop-code/SKILL.md",
+      "trust_level": "community",
+      "scan_verdict": "safe",
+      "content_hash": "sha256:d99b16b243cca40d",
+      "install_path": "antislop-code",
+      "files": [
+        "SKILL.md"
+      ],
+      "metadata": {
+        "url": "https://raw.githubusercontent.com/miqdadbadjuber/anti-slop/main/skills/antislop-code/SKILL.md",
+        "source_url": "https://raw.githubusercontent.com/miqdadbadjuber/anti-slop/main/skills/antislop-code/SKILL.md",
+        "awaiting_name": false
+      },
+      "scan_provenance": {
+        "bundle_hash": "sha256:d99b16b243cca40d2f16fa709a333071d6f1fa5a6f5a24b3099f643e43e056d9",
+        "scanner_version": "skills-guard-v8",
+        "source": "https://raw.githubusercontent.com/miqdadbadjuber/anti-slop/main/skills/antislop-code/SKILL.md",
+        "source_url": "https://raw.githubusercontent.com/miqdadbadjuber/anti-slop/main/skills/antislop-code/SKILL.md",
+        "verdict": "safe",
+        "trust_level": "community",
+        "findings": [
+          {
+            "pattern_id": "allowed_tools_field",
+            "severity": "low",
+            "category": "privilege_escalation",
+            "file": "SKILL.md",
+            "line": 4,
+            "match": "allowed-tools: Read Write Edit Glob Grep",
+            "description": "skill declares allowed-tools (standard frontmatter; informational)"
+          }
+        ],
+        "rules": [
+          "allowed_tools_field"
+        ],
+        "scanned_at": "2026-10-09T11:40:15.950362+00:00",
+        "summary": "antislop-code: safe — 1 finding(s) in privilege_escalation",
+        "fresh": true
+      },
+      "installed_at": "2026-10-09T11:40:15.965012+00:00",
+      "updated_at": "2026-10-09T11:40:15.965012+00:00"
+    },
+    "anti-overengineering": {
+      "source": "url",
+      "identifier": "https://raw.githubusercontent.com/kangw24/BoldGPT/main/SKILL.md",
+      "trust_level": "community",
+      "scan_verdict": "safe",
+      "content_hash": "sha256:9a370e6901c06bca",
+      "install_path": "anti-overengineering",
+      "files": [
+        "SKILL.md"
+      ],
+      "metadata": {
+        "url": "https://raw.githubusercontent.com/kangw24/BoldGPT/main/SKILL.md",
+        "source_url": "https://raw.githubusercontent.com/kangw24/BoldGPT/main/SKILL.md",
+        "awaiting_name": false
+      },
+      "scan_provenance": {
+        "bundle_hash": "sha256:9a370e6901c06bca7148e06e040bbd20ee7ca25e25333d0d7085798cbc6a0f50",
+        "scanner_version": "skills-guard-v10",
+        "source": "https://raw.githubusercontent.com/kangw24/BoldGPT/main/SKILL.md",
+        "source_url": "https://raw.githubusercontent.com/kangw24/BoldGPT/main/SKILL.md",
+        "verdict": "safe",
+        "trust_level": "community",
+        "findings": [],
+        "rules": [],
+        "scanned_at": "2026-10-18T14:46:47.586364+00:00",
+        "summary": "anti-overengineering: clean scan, no threats detected",
+        "fresh": true
+      },
+      "installed_at": "2026-10-18T14:46:47.604350+00:00",
+      "updated_at": "2026-10-18T14:46:47.604350+00:00"
+    },
+    "archify": {
+      "source": "official",
+      "identifier": "official/creative/archify",
+      "trust_level": "trusted",
+      "scan_verdict": "caution",
+      "content_hash": "sha256:bc9147d25104d155",
+      "install_path": "creative/archify",
+      "files": [
+        "SKILL.md",
+        "LICENSE",
+        "THIRD_PARTY_NOTICES.md",
+        "assets/JetBrainsMono-OFL.txt",
+        "assets/template.html",
+        "bin/archify.mjs",
+        "bin/delivery-update.mjs",
+        "bin/finalize.mjs",
+        "bin/open-artifact.mjs",
+        "bin/preview.mjs",
+        "bin/recover-output.mjs",
+        "bin/visual-check.mjs",
+        "brand-marks/README.md",
+        "brand-marks/catalog.json",
+        "delta/architecture-delta.mjs",
+        "examples/agent-run.lifecycle.json",
+        "examples/agent-tool-call.workflow.json",
+        "examples/archify-dev-activity.timeline.json",
+        "examples/archify-repository.tree.json",
+        "examples/async-job-roundtrip.sequence.json",
+        "examples/brand-aware-delivery.architecture.json",
+        "examples/cache-miss-request.sequence.json",
+        "examples/checkout-platform.base.architecture.json",
+        "examples/checkout-platform.head.architecture.json",
+        "examples/checkout-request.waterfall.json",
+        "examples/class-payment-processors-rendered.html",
+        "examples/class-payments-rendered.html",
+        "examples/dataflow-product-analytics.html",
+        "examples/deployment-release.lifecycle.json",
+        "examples/erd-orders-rendered.html",
+        "examples/event-stream.dataflow.json",
+        "examples/example-rebuild.waterfall.json",
+        "examples/holiday-planning.workflow.json",
+        "examples/incident-response.workflow.json",
+        "examples/lifecycle-agent-run.html",
+        "examples/locales/de.json",
+        "examples/locales/fr.json",
+        "examples/locales/fr.partial.json",
+        "examples/locales/it.json",
+        "examples/locales/ja.json",
+        "examples/locales/pt.json",
+        "examples/locales/ru.json",
+        "examples/orders.erd.json",
+        "examples/payment-incident.timeline.json",
+        "examples/payment-platform.tree.json",
+        "examples/payment-processors.class.json",
+        "examples/payments.class.json",
+        "examples/product-analytics.dataflow.json",
+        "examples/production-deployment.architecture.json",
+        "examples/release-delivery.workflow.json",
+        "examples/sequence-cache-miss-request.html",
+        "examples/subscription-billing-rendered.html",
+        "examples/subscription-billing.erd.json",
+        "examples/timeline-archify-dev-activity-rendered.html",
+        "examples/timeline-payment-incident-rendered.html",
+        "examples/tree-archify-repository-rendered.html",
+        "examples/tree-payment-platform-rendered.html",
+        "examples/waterfall-checkout-request-rendered.html",
+        "examples/waterfall-example-rebuild-rendered.html",
+        "examples/web-app-rendered.html",
+        "examples/web-app.architecture.json",
+        "examples/workflow-agent-tool-call-rendered.html",
+        "locales/README.md",
+        "locales/en.json",
+        "locales/es.json",
+        "locales/ko.json",
+        "locales/manifest.json",
+        "locales/zh-CN.json",
+        "locales/zh-TW.json",
+        "migrations/workflow-v2.mjs",
+        "package-lock.json",
+        "package.json",
+        "recipes/scenarios.mjs",
+        "references/architecture-layout-repair.md",
+        "references/authoring-contract.md",
+        "references/authoring-defaults.md",
+        "references/brand-marks.md",
+        "references/delivery-contract.md",
+        "references/repository-authoring.md",
+        "references/update-awareness.md",
+        "references/viewer-runtime.md",
+        "renderers/architecture/grid.mjs",
+        "renderers/architecture/labels.mjs",
+        "renderers/architecture/render-architecture.mjs",
+        "renderers/architecture/routing.mjs",
+        "renderers/class/README.md",
+        "renderers/class/render-class.mjs",
+        "renderers/dataflow/README.md",
+        "renderers/dataflow/dataflow-compiler.mjs",
+        "renderers/dataflow/joint-label-routing.mjs",
+        "renderers/dataflow/label-capacity.mjs",
+        "renderers/dataflow/render-dataflow.mjs",
+        "renderers/erd/README.md",
+        "renderers/erd/grid.mjs",
+        "renderers/erd/render-erd.mjs",
+        "renderers/lifecycle/README.md",
+        "renderers/lifecycle/render-lifecycle.mjs",
+        "renderers/sequence/README.md",
+        "renderers/sequence/render-sequence.mjs",
+        "renderers/shared/atomic-output.mjs",
+        "renderers/shared/automatic-labels.mjs",
+        "renderers/shared/brand-marks.mjs",
+        "renderers/shared/cli.mjs",
+        "renderers/shared/desktop-readability.mjs",
+        "renderers/shared/diagnostics.mjs",
+        "renderers/shared/engineering-profiles.mjs",
+        "renderers/shared/generated-brand-marks.mjs",
+        "renderers/shared/generated-validators.mjs",
+        "renderers/shared/geometry.mjs",
+        "renderers/shared/i18n.mjs",
+        "renderers/shared/layout-report.mjs",
+        "renderers/shared/legend.mjs",
+        "renderers/shared/node-card-style.mjs",
+        "renderers/shared/output-path.mjs",
+        "renderers/shared/owned-temp-directory.mjs",
+        "renderers/shared/path-semantics.mjs",
+        "renderers/shared/portable-path.mjs",
+        "renderers/shared/repository-evidence.mjs",
+        "renderers/shared/repository-location.mjs",
+        "renderers/shared/route-quality.mjs",
+        "renderers/shared/sidecar-path.mjs",
+        "renderers/shared/spatial-grid.mjs",
+        "renderers/shared/svg-path-analysis.mjs",
+        "renderers/shared/text-fit.mjs",
+        "renderers/shared/utils.mjs",
+        "renderers/shared/validator.mjs",
+        "renderers/timeline/README.md",
+        "renderers/timeline/render-timeline.mjs",
+        "renderers/tree/README.md",
+        "renderers/tree/render-tree.mjs",
+        "renderers/waterfall/README.md",
+        "renderers/waterfall/render-waterfall.mjs",
+        "renderers/workflow/README.md",
+        "renderers/workflow/render-workflow.mjs",
+        "renderers/workflow/workflow-compiler.mjs",
+        "renderers/workflow/workflow-migration-geometry.mjs",
+        "renderers/workflow/workflow-placement-repair.mjs",
+        "schemas/README.md",
+        "schemas/architecture.schema.json",
+        "schemas/class.schema.json",
+        "schemas/common.schema.json",
+        "schemas/dataflow.schema.json",
+        "schemas/erd.schema.json",
+        "schemas/lifecycle.schema.json",
+        "schemas/sequence.schema.json",
+        "schemas/timeline.schema.json",
+        "schemas/tree.schema.json",
+        "schemas/waterfall.schema.json",
+        "schemas/workflow.schema.json",
+        "scripts/check-render-output.mjs",
+        "scripts/check-update.mjs",
+        "scripts/delivery-update-child.mjs",
+        "scripts/generate-brand-marks.mjs",
+        "scripts/generate-validators.mjs",
+        "scripts/render-examples.mjs",
+        "scripts/update-contract.mjs",
+        "skill-release.json"
+      ],
+      "metadata": {
+        "source_url": "https://github.com/tt-a1i/archify/tree/b25142deac4b19b293e45b6bf6d69351d3c8f3b6/archify",
+        "source_revision": "b25142deac4b19b293e45b6bf6d69351d3c8f3b6",
+        "upstream_repo": "tt-a1i/archify",
+        "upstream_path": "archify"
+      },
+      "scan_provenance": {
+        "bundle_hash": "sha256:bc9147d25104d15561b576324d6817dbea6adde22e9ca74a1d7dffb2dc256496",
+        "scanner_version": "skills-guard-v10",
+        "source": "official",
+        "source_url": "https://github.com/tt-a1i/archify/tree/b25142deac4b19b293e45b6bf6d69351d3c8f3b6/archify",
+        "verdict": "caution",
+        "trust_level": "builtin",
+        "findings": [
+          {
+            "pattern_id": "oversized_file",
+            "severity": "medium",
+            "category": "structural",
+            "file": "assets\\template.html",
+            "line": 0,
+            "match": "766KB",
+            "description": "file is 766KB (limit: 256KB)"
+          },
+          {
+            "pattern_id": "oversized_file",
+            "severity": "medium",
+            "category": "structural",
+            "file": "bin\\archify.mjs",
+            "line": 0,
+            "match": "269KB",
+            "description": "file is 269KB (limit: 256KB)"
+          },
+          {
+            "pattern_id": "oversized_file",
+            "severity": "medium",
+            "category": "structural",
+            "file": "examples\\class-payment-processors-rendered.html",
+            "line": 0,
+            "match": "832KB",
+            "description": "file is 832KB (limit: 256KB)"
+          },
+          {
+            "pattern_id": "oversized_file",
+            "severity": "medium",
+            "category": "structural",
+            "file": "examples\\class-payments-rendered.html",
+            "line": 0,
+            "match": "799KB",
+            "description": "file is 799KB (limit: 256KB)"
+          },
+          {
+            "pattern_id": "oversized_file",
+            "severity": "medium",
+            "category": "structural",
+            "file": "examples\\dataflow-product-analytics.html",
+            "line": 0,
+            "match": "802KB",
+            "description": "file is 802KB (limit: 256KB)"
+          },
+          {
+            "pattern_id": "oversized_file",
+            "severity": "medium",
+            "category": "structural",
+            "file": "examples\\erd-orders-rendered.html",
+            "line": 0,
+            "match": "819KB",
+            "description": "file is 819KB (limit: 256KB)"
+          },
+          {
+            "pattern_id": "oversized_file",
+            "severity": "medium",
+            "category": "structural",
+            "file": "examples\\lifecycle-agent-run.html",
+            "line": 0,
+            "match": "805KB",
+            "description": "file is 805KB (limit: 256KB)"
+          },
+          {
+            "pattern_id": "oversized_file",
+            "severity": "medium",
+            "category": "structural",
+            "file": "examples\\sequence-cache-miss-request.html",
+            "line": 0,
+            "match": "799KB",
+            "description": "file is 799KB (limit: 256KB)"
+          },
+          {
+            "pattern_id": "oversized_file",
+            "severity": "medium",
+            "category": "structural",
+            "file": "examples\\subscription-billing-rendered.html",
+            "line": 0,
+            "match": "841KB",
+            "description": "file is 841KB (limit: 256KB)"
+          },
+          {
+            "pattern_id": "oversized_file",
+            "severity": "medium",
+            "category": "structural",
+            "file": "examples\\timeline-archify-dev-activity-rendered.html",
+            "line": 0,
+            "match": "824KB",
+            "description": "file is 824KB (limit: 256KB)"
+          },
+          {
+            "pattern_id": "oversized_file",
+            "severity": "medium",
+            "category": "structural",
+            "file": "examples\\timeline-payment-incident-rendered.html",
+            "line": 0,
+            "match": "792KB",
+            "description": "file is 792KB (limit: 256KB)"
+          },
+          {
+            "pattern_id": "oversized_file",
+            "severity": "medium",
+            "category": "structural",
+            "file": "examples\\tree-archify-repository-rendered.html",
+            "line": 0,
+            "match": "834KB",
+            "description": "file is 834KB (limit: 256KB)"
+          },
+          {
+            "pattern_id": "oversized_file",
+            "severity": "medium",
+            "category": "structural",
+            "file": "examples\\tree-payment-platform-rendered.html",
+            "line": 0,
+            "match": "798KB",
+            "description": "file is 798KB (limit: 256KB)"
+          },
+          {
+            "pattern_id": "oversized_file",
+            "severity": "medium",
+            "category": "structural",
+            "file": "examples\\waterfall-checkout-request-rendered.html",
+            "line": 0,
+            "match": "791KB",
+            "description": "file is 791KB (limit: 256KB)"
+          },
+          {
+            "pattern_id": "oversized_file",
+            "severity": "medium",
+            "category": "structural",
+            "file": "examples\\waterfall-example-rebuild-rendered.html",
+            "line": 0,
+            "match": "821KB",
+            "description": "file is 821KB (limit: 256KB)"
+          },
+          {
+            "pattern_id": "oversized_file",
+            "severity": "medium",
+            "category": "structural",
+            "file": "examples\\web-app-rendered.html",
+            "line": 0,
+            "match": "804KB",
+            "description": "file is 804KB (limit: 256KB)"
+          },
+          {
+            "pattern_id": "oversized_file",
+            "severity": "medium",
+            "category": "structural",
+            "file": "examples\\workflow-agent-tool-call-rendered.html",
+            "line": 0,
+            "match": "809KB",
+            "description": "file is 809KB (limit: 256KB)"
+          },
+          {
+            "pattern_id": "oversized_file",
+            "severity": "medium",
+            "category": "structural",
+            "file": "renderers\\shared\\generated-validators.mjs",
+            "line": 0,
+            "match": "823KB",
+            "description": "file is 823KB (limit: 256KB)"
+          },
+          {
+            "pattern_id": "too_many_files",
+            "severity": "medium",
+            "category": "structural",
+            "file": "(directory)",
+            "line": 0,
+            "match": "157 files",
+            "description": "skill has 157 files (limit: 50)"
+          },
+          {
+            "pattern_id": "oversized_skill",
+            "severity": "low",
+            "category": "structural",
+            "file": "(directory)",
+            "line": 0,
+            "match": "16650KB total",
+            "description": "skill is 16650KB total (limit: 5120KB)"
+          },
+          {
+            "pattern_id": "encoded_exfil",
+            "severity": "high",
+            "category": "exfiltration",
+            "file": "assets\\template.html",
+            "line": 162,
+            "match": "src: url(data:font/woff2;base64,d09GMgABAAAAAC1MABIAAAAAdAQAACzjAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGoJLG4ouHIM+BmA/U1RBV...",
+            "description": "base64 encoding combined with environment access"
+          },
+          {
+            "pattern_id": "encoded_exfil",
+            "severity": "high",
+            "category": "exfiltration",
+            "file": "examples\\class-payment-processors-rendered.html",
+            "line": 162,
+            "match": "src: url(data:font/woff2;base64,d09GMgABAAAAAC1MABIAAAAAdAQAACzjAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGoJLG4ouHIM+BmA/U1RBV...",
+            "description": "base64 encoding combined with environment access"
+          },
+          {
+            "pattern_id": "encoded_exfil",
+            "severity": "high",
+            "category": "exfiltration",
+            "file": "examples\\class-payments-rendered.html",
+            "line": 162,
+            "match": "src: url(data:font/woff2;base64,d09GMgABAAAAAC1MABIAAAAAdAQAACzjAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGoJLG4ouHIM+BmA/U1RBV...",
+            "description": "base64 encoding combined with environment access"
+          },
+          {
+            "pattern_id": "encoded_exfil",
+            "severity": "high",
+            "category": "exfiltration",
+            "file": "examples\\dataflow-product-analytics.html",
+            "line": 162,
+            "match": "src: url(data:font/woff2;base64,d09GMgABAAAAAC1MABIAAAAAdAQAACzjAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGoJLG4ouHIM+BmA/U1RBV...",
+            "description": "base64 encoding combined with environment access"
+          },
+          {
+            "pattern_id": "encoded_exfil",
+            "severity": "high",
+            "category": "exfiltration",
+            "file": "examples\\erd-orders-rendered.html",
+            "line": 162,
+            "match": "src: url(data:font/woff2;base64,d09GMgABAAAAAC1MABIAAAAAdAQAACzjAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGoJLG4ouHIM+BmA/U1RBV...",
+            "description": "base64 encoding combined with environment access"
+          },
+          {
+            "pattern_id": "encoded_exfil",
+            "severity": "high",
+            "category": "exfiltration",
+            "file": "examples\\lifecycle-agent-run.html",
+            "line": 162,
+            "match": "src: url(data:font/woff2;base64,d09GMgABAAAAAC1MABIAAAAAdAQAACzjAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGoJLG4ouHIM+BmA/U1RBV...",
+            "description": "base64 encoding combined with environment access"
+          },
+          {
+            "pattern_id": "encoded_exfil",
+            "severity": "high",
+            "category": "exfiltration",
+            "file": "examples\\sequence-cache-miss-request.html",
+            "line": 162,
+            "match": "src: url(data:font/woff2;base64,d09GMgABAAAAAC1MABIAAAAAdAQAACzjAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGoJLG4ouHIM+BmA/U1RBV...",
+            "description": "base64 encoding combined with environment access"
+          },
+          {
+            "pattern_id": "encoded_exfil",
+            "severity": "high",
+            "category": "exfiltration",
+            "file": "examples\\subscription-billing-rendered.html",
+            "line": 162,
+            "match": "src: url(data:font/woff2;base64,d09GMgABAAAAAC1MABIAAAAAdAQAACzjAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGoJLG4ouHIM+BmA/U1RBV...",
+            "description": "base64 encoding combined with environment access"
+          },
+          {
+            "pattern_id": "encoded_exfil",
+            "severity": "high",
+            "category": "exfiltration",
+            "file": "examples\\timeline-archify-dev-activity-rendered.html",
+            "line": 162,
+            "match": "src: url(data:font/woff2;base64,d09GMgABAAAAAC1MABIAAAAAdAQAACzjAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGoJLG4ouHIM+BmA/U1RBV...",
+            "description": "base64 encoding combined with environment access"
+          },
+          {
+            "pattern_id": "encoded_exfil",
+            "severity": "high",
+            "category": "exfiltration",
+            "file": "examples\\timeline-payment-incident-rendered.html",
+            "line": 162,
+            "match": "src: url(data:font/woff2;base64,d09GMgABAAAAAC1MABIAAAAAdAQAACzjAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGoJLG4ouHIM+BmA/U1RBV...",
+            "description": "base64 encoding combined with environment access"
+          },
+          {
+            "pattern_id": "encoded_exfil",
+            "severity": "high",
+            "category": "exfiltration",
+            "file": "examples\\tree-archify-repository-rendered.html",
+            "line": 162,
+            "match": "src: url(data:font/woff2;base64,d09GMgABAAAAAC1MABIAAAAAdAQAACzjAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGoJLG4ouHIM+BmA/U1RBV...",
+            "description": "base64 encoding combined with environment access"
+          },
+          {
+            "pattern_id": "encoded_exfil",
+            "severity": "high",
+            "category": "exfiltration",
+            "file": "examples\\tree-payment-platform-rendered.html",
+            "line": 162,
+            "match": "src: url(data:font/woff2;base64,d09GMgABAAAAAC1MABIAAAAAdAQAACzjAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGoJLG4ouHIM+BmA/U1RBV...",
+            "description": "base64 encoding combined with environment access"
+          },
+          {
+            "pattern_id": "encoded_exfil",
+            "severity": "high",
+            "category": "exfiltration",
+            "file": "examples\\waterfall-checkout-request-rendered.html",
+            "line": 162,
+            "match": "src: url(data:font/woff2;base64,d09GMgABAAAAAC1MABIAAAAAdAQAACzjAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGoJLG4ouHIM+BmA/U1RBV...",
+            "description": "base64 encoding combined with environment access"
+          },
+          {
+            "pattern_id": "encoded_exfil",
+            "severity": "high",
+            "category": "exfiltration",
+            "file": "examples\\waterfall-example-rebuild-rendered.html",
+            "line": 162,
+            "match": "src: url(data:font/woff2;base64,d09GMgABAAAAAC1MABIAAAAAdAQAACzjAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGoJLG4ouHIM+BmA/U1RBV...",
+            "description": "base64 encoding combined with environment access"
+          },
+          {
+            "pattern_id": "encoded_exfil",
+            "severity": "high",
+            "category": "exfiltration",
+            "file": "examples\\web-app-rendered.html",
+            "line": 162,
+            "match": "src: url(data:font/woff2;base64,d09GMgABAAAAAC1MABIAAAAAdAQAACzjAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGoJLG4ouHIM+BmA/U1RBV...",
+            "description": "base64 encoding combined with environment access"
+          },
+          {
+            "pattern_id": "encoded_exfil",
+            "severity": "high",
+            "category": "exfiltration",
+            "file": "examples\\workflow-agent-tool-call-rendered.html",
+            "line": 162,
+            "match": "src: url(data:font/woff2;base64,d09GMgABAAAAAC1MABIAAAAAdAQAACzjAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGoJLG4ouHIM+BmA/U1RBV...",
+            "description": "base64 encoding combined with environment access"
+          },
+          {
+            "pattern_id": "unicode_escape_chain",
+            "severity": "medium",
+            "category": "obfuscation",
+            "file": "schemas\\common.schema.json",
+            "line": 37,
+            "match": "{ \"not\": { \"pattern\": \"[\\\\\\\\<>:\\\"|?*\\\\u0000-\\\\u001F\\\\u007F-\\\\u009F]\" } },",
+            "description": "chain of unicode escapes (possible obfuscation)"
+          }
+        ],
+        "rules": [
+          "encoded_exfil",
+          "oversized_file",
+          "oversized_skill",
+          "too_many_files",
+          "unicode_escape_chain"
+        ],
+        "scanned_at": "2026-10-18T15:10:37.259404+00:00",
+        "summary": "archify: caution — 37 finding(s) in exfiltration, obfuscation, structural",
+        "fresh": true
+      },
+      "installed_at": "2026-10-18T15:10:37.336054+00:00",
+      "updated_at": "2026-10-18T15:10:37.336054+00:00"
+    }
+  }
+}

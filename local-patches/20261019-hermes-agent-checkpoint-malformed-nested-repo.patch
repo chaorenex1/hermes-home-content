@@ -1,0 +1,208 @@
+diff --git a/tests/tools/test_checkpoint_malformed_nested_repo.py b/tests/tools/test_checkpoint_malformed_nested_repo.py
+new file mode 100644
+index 0000000000..97c59e9b88
+--- /dev/null
++++ b/tests/tools/test_checkpoint_malformed_nested_repo.py
+@@ -0,0 +1,92 @@
++"""A malformed nested ``.git`` must not cost a project its checkpoints.
++
++git aborts the whole ``git add -A`` when a work-tree directory has a ``.git``
++that is not a usable repository (an empty dir, a dead gitfile). Without
++recovery every snapshot of that project fails silently, so ``/rollback`` has
++nothing to offer.
++"""
++import os
++import subprocess
++
++import pytest
++
++from tools import checkpoint_manager as cm
++from utils import rmtree_readonly
++
++
++@pytest.fixture
++def manager(tmp_path, monkeypatch):
++    monkeypatch.setattr(cm, "CHECKPOINT_BASE", tmp_path / "checkpoints")
++    # process-wide cache: keep one test's skipped path out of the next one
++    monkeypatch.setattr(cm, "_MALFORMED_NESTED_SKIPS", {})
++    work = tmp_path / "workspace"
++    work.mkdir()
++    (work / "notes.txt").write_text("before\n")
++    tool = work / "tool"
++    tool.mkdir()
++    env = {**os.environ, "GIT_CONFIG_GLOBAL": os.devnull, "GIT_CONFIG_NOSYSTEM": "1"}
++    for args in (["init", "-q"], ["config", "user.name", "Test"],
++                 ["config", "user.email", "test@example.invalid"]):
++        subprocess.run(["git", *args], cwd=tool, env=env, check=True, capture_output=True)
++    (tool / "main.py").write_text("nested\n")
++    subprocess.run(["git", "add", "."], cwd=tool, env=env, check=True, capture_output=True)
++    subprocess.run(["git", "commit", "-qm", "seed"], cwd=tool, env=env, check=True,
++                   capture_output=True)
++    mgr = cm.CheckpointManager(enabled=True)
++    assert mgr.ensure_checkpoint(str(work), "baseline") is True
++    # the nested repo was captured as a gitlink; now its .git is debris
++    rmtree_readonly(str(tool / ".git"))
++    (tool / ".git").mkdir()
++    mgr.new_turn()
++    return mgr, work, tool
++
++
++def tree_paths(work, commit):
++    ok, out, err = cm._run_git(["ls-tree", "-r", "-z", commit], cm._store_path(), str(work))
++    assert ok, err
++    return [record.split("\t", 1)[1] for record in out.split("\x00") if "\t" in record]
++
++
++def test_broken_nested_git_does_not_discard_the_snapshot(manager):
++    mgr, work, _ = manager
++    (work / "notes.txt").write_text("after\n")
++    assert mgr.ensure_checkpoint(str(work), "edit") is True
++    checkpoints = mgr.list_checkpoints(str(work))
++    assert len(checkpoints) == 2
++    assert "notes.txt" in tree_paths(work, checkpoints[0]["hash"])
++
++
++def test_later_snapshot_still_detects_changes(manager):
++    mgr, work, _ = manager
++    (work / "notes.txt").write_text("after\n")
++    assert mgr.ensure_checkpoint(str(work), "edit") is True
++    checkpoints = mgr.list_checkpoints(str(work))
++    result = mgr.diff(str(work), checkpoints[-1]["hash"])
++    assert result["success"] is True, result
++    assert "notes.txt" in result["diff"]
++
++
++@pytest.mark.parametrize("stderr, expected", [
++    ("fatal: 'broken/.git' not recognized as a git repository\n", "broken"),
++    ("fatal: 'a/b/.git' not recognized as a git repository\n", "a/b"),
++    ("fatal: 'a\\b\\.git' not recognized as a git repository\n", "a/b"),
++    ("fatal: 'C:/x/.git' not recognized as a git repository\n", None),
++    ("fatal: '../x/.git' not recognized as a git repository\n", None),
++    ("fatal: something else entirely\n", None),
++    ("", None),
++])
++def test_malformed_nested_git_path(stderr, expected):
++    assert cm._malformed_nested_git_path(stderr) == expected
++
++
++def test_recovered_path_is_remembered(manager):
++    """One failing add per work tree per process, not one per snapshot."""
++    mgr, work, _ = manager
++    (work / "notes.txt").write_text("after\n")
++    assert mgr.ensure_checkpoint(str(work), "edit") is True
++    skipped = cm._MALFORMED_NESTED_SKIPS.get(str(cm._normalize_path(str(work))))
++    assert skipped == {"tool"}
++    store = cm._store_path()
++    index = cm._index_path(store, cm._project_hash(str(work)))
++    ok, _, err = cm._stage_all(store, str(work), index)
++    assert ok, err
+diff --git a/tools/checkpoint_manager.py b/tools/checkpoint_manager.py
+index 140cace15f..ce6c7e9573 100644
+--- a/tools/checkpoint_manager.py
++++ b/tools/checkpoint_manager.py
+@@ -437,6 +437,73 @@ def _git_out(args: list[str], store: Path, working_dir: str, rc: Optional[set[in
+     return out if ok else ""
+ 
+ 
++# A work tree can hold a directory whose ``.git`` is not a usable repository (an
++# empty .git dir, a dead gitfile, a half-removed nested clone).  git treats it as
++# a repository boundary and aborts the entire ``git add -A`` with rc=128, which
++# would silently cost that project every checkpoint.  The path is debris, not
++# project content: exclude it and keep capturing the rest of the tree.
++_MALFORMED_NESTED_GIT_RE = re.compile(
++    r"'([^'\r\n]+?)[\\/]\.git' not recognized as a git repository")
++# Remembered per absolute work tree so later snapshots skip the failing add.
++_MALFORMED_NESTED_SKIPS: dict[str, set[str]] = {}
++_STAGE_ATTEMPTS = 4
++
++
++def _malformed_nested_git_path(stderr: str) -> Optional[str]:
++    """Work-tree-relative path of the broken nested repo named in a git error."""
++    match = _MALFORMED_NESTED_GIT_RE.search(stderr or "")
++    if match is None:
++        return None
++    path = match.group(1).replace("\\", "/").strip("/")
++    if not path or path.startswith("/") or re.match(r"^[A-Za-z]:", path):
++        return None
++    if any(part in {"", ".", ".."} for part in path.split("/")):
++        return None
++    return path
++
++
++def _stage_all(
++    store: Path,
++    working_dir: str,
++    index_file: Optional[Path] = None,
++) -> tuple[bool, str, str]:
++    """``git add -A`` that survives a malformed nested repository.
++
++    Each offending path is excluded from the stage (never captured as a bogus
++    gitlink) and remembered for this work tree, so a later snapshot does not
++    pay the failing add again.
++    """
++    key = str(_normalize_path(working_dir))
++    excluded = _MALFORMED_NESTED_SKIPS.setdefault(key, set())
++    for _ in range(_STAGE_ATTEMPTS):
++        if excluded:
++            specs = [f":(exclude,literal){path}" for path in sorted(excluded)]
++            ok, out, err = _run_git(
++                ["add", "-A", "--", ".", *specs], store, working_dir,
++                timeout=_GIT_TIMEOUT * 2, index_file=index_file,
++                allowed_returncodes={128},
++            )
++        else:
++            ok, out, err = _run_git(
++                ["add", "-A"], store, working_dir,
++                timeout=_GIT_TIMEOUT * 2, index_file=index_file,
++                allowed_returncodes={128},
++            )
++        if ok:
++            return ok, out, err
++        broken = _malformed_nested_git_path(err)
++        if broken is None or broken in excluded:
++            logger.error(
++                "Git add -A failed in %s (rc!=0) stderr=%s", working_dir, err)
++            return ok, out, err
++        excluded.add(broken)
++        logger.warning(
++            "Checkpoint: excluding %r from %s — its .git is not a usable git "
++            "repository, which makes git refuse to stage the rest of the work tree",
++            broken, working_dir)
++    return False, "", f"malformed nested repositories: {', '.join(sorted(excluded))}"
++
++
+ def _ref_tip(store: Path, working_dir: str, ref: str) -> Optional[str]:
+     """Commit sha at ``ref``, or None when the ref does not exist yet."""
+     return _git_out(["rev-parse", "--verify", ref + "^{commit}"], store, working_dir, {128}) or None
+@@ -874,8 +941,7 @@ class CheckpointManager:
+         index_file = _index_path(store, dir_hash)
+ 
+         # Stage the current tree so the name-only diff sees new files too.
+-        _run_git(["add", "-A"], store, abs_dir,
+-                 timeout=_GIT_TIMEOUT * 2, index_file=index_file)
++        _stage_all(store, abs_dir, index_file)
+         ok, names_out, err = _run_git(
+             ["diff", "--name-only", "-z", commit_hash, "--cached"],
+             store, abs_dir, index_file=index_file,
+@@ -1055,8 +1121,7 @@ class CheckpointManager:
+         index_file = _index_path(store, dir_hash)
+ 
+         # Stage current state into the per-project index to compare.
+-        _run_git(["add", "-A"], store, abs_dir,
+-                 timeout=_GIT_TIMEOUT * 2, index_file=index_file)
++        _stage_all(store, abs_dir, index_file)
+ 
+         ok_stat, stat_out, _ = _run_git(
+             ["diff", "--stat", commit_hash, "--cached"],
+@@ -1465,10 +1530,7 @@ class CheckpointManager:
+         # via ``core.bigFileThreshold`` is not what we want — instead, we
+         # rely on the exclude file for broad patterns and post-stage prune
+         # any path whose size exceeds max_file_size_mb.
+-        ok, _, err = _run_git(
+-            ["add", "-A"], store, working_dir,
+-            timeout=_GIT_TIMEOUT * 2, index_file=index_file,
+-        )
++        ok, _, err = _stage_all(store, working_dir, index_file)
+         if not ok:
+             logger.debug("Checkpoint git-add failed: %s", err)
+             return False

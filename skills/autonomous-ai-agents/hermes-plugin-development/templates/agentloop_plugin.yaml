@@ -1,0 +1,9 @@
+# Copy this to <plugin_dir>/plugin.yaml and rename `name` + the tool id together.
+# `provides_tools` must match the register_tool() names exactly —
+# `hermes plugins validate` fails the "declared tools" check otherwise.
+name: agentloop-demo
+version: "0.1.0"
+description: "Run a full child agent loop (LLM + tools) from a plugin tool."
+author: Masia
+provides_tools:
+  - agentloop_review

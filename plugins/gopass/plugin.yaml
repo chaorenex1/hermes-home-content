@@ -1,0 +1,19 @@
+name: gopass
+label: gopass secrets
+kind: standalone
+version: "0.2.0"
+author: chaorenex1
+license: MIT
+requires_hermes: ">=0.21.5"
+description: >
+  gopass password-store secret sources. Resolves provider credentials at
+  process startup from the user's local gopass CLI: "gopass" (mapped —
+  explicit ENV_VAR -> entry[#key] bindings under secrets.gopass.env) and
+  "gopass_folder" (bulk — every entry under secrets.gopass_folder.folder
+  becomes an env var named by its basename). Decryption goes through the
+  user's GPG agent; the plugin never prompts and stores no credentials.
+tags:
+  - secrets
+  - gopass
+  - password-manager
+  - vault
